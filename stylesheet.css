@@ -1,7 +1,23 @@
+body {
+	background-image: url("background.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 h1 {
 	color: #8B1C62;
 }
 
 p {
 	font-family: Sans-serif;
+}
+
+.main {
+	background-color: rgba(255, 255, 255, 0.75);
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10px 20px 10px 20px;
 }
