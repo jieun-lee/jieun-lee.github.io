@@ -1,33 +1,64 @@
 @import 'mediaquery';
 
+$sidebar-photo-size: 200px;
+
 $section-body-radius: 5px;
 $section-body-padding: 5px;
 
+$default-font: 'Source Sans Pro', sans-serif;
+$sidebar-name-font: 'Roboto Slab', serif;
+
 body {
+    font-family: $default-font;
     margin: 0;
 }
 
 .sidebar {
     float: left;
-    background-color: pink;
+    text-align: center;
+    background-color: #FFC3D0;
+
+    > div {
+        margin: 0 5%;
+    }
+
+    &__photo {
+        margin: 5% auto !important;
+        width: $sidebar-photo-size;
+        height: $sidebar-photo-size;
+        overflow: hidden;
+        border: 5px solid white;
+        border-radius: 100%;
+
+        &__img {
+            height: 100%;
+        }
+    }
+
+    &__heading {
+        font-family: $sidebar-name-font;
+    }
 }
 
 .main {
     float: right;
-    background-color: yellow;
-}
+    background-color: #F5EDE0;
 
-.section {
-    padding: 3%;
+    .section {
+        padding: 3%;
 
-    &--header {
-        font-weight: bold;
+        &--header {
+            color: #422C0A;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        &--body {
+            background-color: white;
+            padding: 2%;
+            border-radius: $section-body-radius;
+        }
     }
-
-    &--body {
-        background-color: white;
-        padding: 2%;
-        border-radius: $section-body-radius;
-    }
 }
-
