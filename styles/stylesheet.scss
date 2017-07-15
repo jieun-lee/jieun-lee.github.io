@@ -38,6 +38,15 @@ body {
     &__heading {
         font-family: $sidebar-name-font;
     }
+
+    &__links {
+        padding: 10px;
+
+        a {
+            padding: 5px;
+            text-decoration: none;
+        }
+    }
 }
 
 .main {
