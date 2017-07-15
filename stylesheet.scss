@@ -1,0 +1,15 @@
+@import 'mediaquery';
+
+body {
+    margin: 0;
+
+    .sidebar {
+        display: inline-block;
+        background-color: pink;
+    }
+
+    .main {
+        display: inline-block;
+        background-color: yellow;
+    }
+}

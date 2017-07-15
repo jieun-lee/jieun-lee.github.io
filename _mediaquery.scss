@@ -1,0 +1,39 @@
+// media queries
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+.sidebar {
+    width: 100%;
+
+    @include tablet {
+        width: 33%;
+    }
+
+    @include desktop {
+        width: 25%;
+    }
+}
+
+.main {
+    width: 100%;
+
+    @include tablet {
+        width: 67%;
+    }
+
+    @include desktop {
+        width: 75%;
+    }
+}
