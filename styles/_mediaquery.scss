@@ -15,6 +15,7 @@ $desktop-width: 1024px;
 }
 
 .sidebar {
+    // phone
     width: 100%;
 
     @include tablet {
@@ -27,6 +28,7 @@ $desktop-width: 1024px;
 }
 
 .main {
+    // phone
     width: 100%;
 
     @include tablet {
