@@ -1,15 +1,33 @@
 @import 'mediaquery';
 
+$section-body-radius: 5px;
+$section-body-padding: 5px;
+
 body {
     margin: 0;
+}
 
-    .sidebar {
-        display: inline-block;
-        background-color: pink;
+.sidebar {
+    float: left;
+    background-color: pink;
+}
+
+.main {
+    float: right;
+    background-color: yellow;
+}
+
+.section {
+    padding: 3%;
+
+    &--header {
+        font-weight: bold;
     }
 
-    .main {
-        display: inline-block;
-        background-color: yellow;
+    &--body {
+        background-color: white;
+        padding: 2%;
+        border-radius: $section-body-radius;
     }
 }
+
