@@ -35,8 +35,7 @@ $desktop-width: 1024px;
     }
 
     @include tabletplus {
-        // temporary: find a way to it fill
-        // the entire left side
+        // temporary: find a way to it fill full height
         height: 1000px;
     }
 }
