@@ -2,6 +2,12 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+@mixin tabletplus {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
         @content;
@@ -26,6 +32,12 @@ $desktop-width: 1024px;
     @include desktop {
         position: fixed;
         width: 28%;
+    }
+
+    @include tabletplus {
+        // temporary: find a way to it fill
+        // the entire left side
+        height: 1000px;
     }
 }
 

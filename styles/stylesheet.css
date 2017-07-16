@@ -8,6 +8,9 @@
     .sidebar {
       position: fixed;
       width: 28%; } }
+  @media (min-width: 768px) {
+    .sidebar {
+      height: 1000px; } }
 
 .main {
   width: 100%; }
@@ -25,7 +28,8 @@ body {
 .sidebar {
   float: left;
   text-align: center;
-  background-color: #FFC3D0; }
+  background-color: #FFC3D0;
+  box-shadow: 1px 0px 20px -2px rgba(0, 0, 0, 0.3); }
   .sidebar > div {
     margin: 0 5%; }
   .sidebar__photo {
@@ -47,7 +51,11 @@ body {
 
 .main {
   float: right;
-  background-color: #F5EDE0; }
+  background-image: url("../background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .main .section {
     padding: 3%; }
     .main .section--header {
@@ -57,7 +65,7 @@ body {
       font-weight: bold;
       letter-spacing: 3px; }
     .main .section--body {
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.6);
       padding: 2%;
       border-radius: 5px; }
 
