@@ -2,18 +2,189 @@
 <html>
 	<head>
 		<title>Jieun Lee</title>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href="styles/stylesheet.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Sans+Pro" rel="stylesheet">
 	</head>
 
 	<body>
-		<div class="main">
+		<div class="sidebar">
 
-			<h1>Jieun Lee</h1>
-			<p>My name is Jieun Lee and I am a 3rd year student at UBC pursuing a Combined Major in Computer Science and Mathematics.</p>
+			<div class="sidebar__photo">
+				<img class="sidebar__photo__img" src="photo.jpeg" alt="me"/>
+			</div>
 
-			<div class="footer">
-				<a href="https://github.com/jieun-lee">GitHub</a>
-				<a href="https://www.linkedin.com/in/jieun-lee-84821b11b">LinkedIn</a>
+			<div class="sidebar__heading">
+				<h1 class="sidebar__heading__name">Jieun Lee</h1>
+			</div>
+
+			<div class="sidebar__description">
+				<p>
+					Combined Major in Computer Science and Mathematics at UBC
+				</p>
+			</div>
+
+			<div class="sidebar__menu">
+				<div class="sidebar__menu__item">About Me</div>
+				<div class="sidebar__menu__item">Skills</div>
+				<div class="sidebar__menu__item">Projects</div>
+				<div class="sidebar__menu__item">Interests</div>
+				<div class="sidebar__menu__item">More Info</div>
+			</div>
+
+			<div class="sidebar__links">
+				<a href="https://github.com/jieun-lee" target="_blank">
+					<img src="icons/github.png" alt="GitHub"/>
+				</a>
+				<a href="www.linkedin.com/in/jieun-leee" target="_blank">
+					<img src="icons/linkedin.png" alt="LinkedIn"/>
+				</a>
+			</div>
+		</div><div class="main">
+
+			<div class="section section__about">
+				<div class="section--header">
+					About Me
+				</div>
+
+				<div class="section--body">
+					<p>
+						Hi! I'm a third year science student at UBC pursuing a combined major in Computer Science and Mathematics.
+						Currently, I'm on a co-op term at Hootsuite for 8 months.
+					</p>
+					<p>
+						I have more front-end experience using JavaScript and CSS, but I am wanting to learn more about the back-end side as well.
+						I also enjoy learning things and making new projects on my own outside of school and work.
+						Besides this webpage, I have made some projects using Java and some with HTML, CSS, JavaScript, and jQuery.
+						I am also in the progress of making an Android app, learning about SQLite databases along the way.
+					</p>
+					<p>
+						Outside of my programming life, I have a passion for music and playing instruments.
+						I started playing piano since I was young, and picked up guitar about two years ago as well.
+						I enjoy both playing alone or as part of a band.
+					</p>
+				</div>
+			</div>
+
+			<div class="section section__skills">
+				<div class="section--header">
+					Skills
+				</div>
+
+				<div class="section--body">
+					Programming:
+					<ul>
+						<li>Java</li>
+						<li>C</li>
+						<li>C++</li>
+						<li>Assembly</li>
+					</ul><br>
+
+					Web Development:
+					<ul>
+						<li>HTML</li>
+						<li>CSS/SASS</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>React</li>
+						<li>PHP</li>
+						<li>Twig</li>
+					</ul><br>
+
+					Testing:
+					<ul>
+						<li>Jasmine</li>
+						<li>JUnit</li>
+						<li>GDB</li>
+						<li>Test Plans</li>
+					</ul><br>
+
+					IDEs and Tools:
+					<ul>
+						<li>Git</li>
+						<li>GitHub</li>
+						<li>Gerrit</li>
+						<li>IntelliJ</li>
+						<li>Eclipse</li>
+						<li>Android Studio</li>
+						<li>JIRA</li>
+					</ul><br>
+
+					Other:
+					<ul>
+						<li>Matlab</li>
+						<li>LaTeX</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section section__projects">
+				<div class="section--header">
+					Projects
+				</div>
+
+				<div class="section--body">
+
+					<div class="project__item">
+						<div class="project__item__title">
+							Flying Vegetable Mini Game
+						</div>
+						<div class="project__item__skills">
+							Version 1: Java, Java Swing<br>
+							Version 2: JavaScript, HTML
+						</div>
+						<div class="project__item__description">
+							Mini game where a vegetable files up and down to avoid hitting obstacles
+						</div>
+						<div class="project__item__link">
+							See on <a href="https://github.com/jieun-lee/fly-vegetable">Github</a>
+						</div>
+					</div>
+
+					<div class="project__item">
+						<div class="project__item__title">
+							Ice Cream Game
+						</div>
+						<div class="project__item__skills">
+							Java, Java Swing
+						</div>
+						<div class="project__item__description">
+							Original Monopoly-like board game<br>
+							Two players move around the board, buying ice cream flavours and collecting stars
+						</div>
+						<div class="project__item__link">
+							See on <a href="https://github.com/jieun-lee/ice-cream-game">Github</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="section section__interests">
+				<div class="section--header">
+					Interests
+				</div>
+
+				<div class="section--body">
+					Some of my interests include:
+					<ul>
+						<li>Programming</li>
+						<li>Music</li>
+						<li>Photography</li>
+						<li>Food</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="section section__contact">
+				<div class="section--header">
+					More Info
+				</div>
+
+				<div class="section--body">
+					View my projects and code on <a href="https://github.com/jieun-lee" target="_blank">Github</a><br>
+					Connect with me on <a href="www.linkedin.com/in/jieun-leee" target="_blank">LinkedIn</a>
+				</div>
 			</div>
 
 		</div>

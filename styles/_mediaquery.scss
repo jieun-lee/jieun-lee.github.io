@@ -1,0 +1,54 @@
+// media queries
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tabletplus {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+.sidebar {
+    // phone
+    width: 100%;
+
+    @include tablet {
+        position: fixed;
+        width: 33%;
+    }
+
+    @include desktop {
+        position: fixed;
+        width: 28%;
+    }
+
+    @include tabletplus {
+        // temporary: find a way to it fill full height
+        height: 1000px;
+    }
+}
+
+.main {
+    // phone
+    width: 100%;
+
+    @include tablet {
+        width: 67%;
+    }
+
+    @include desktop {
+        width: 72%;
+    }
+}
