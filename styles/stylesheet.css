@@ -1,36 +1,42 @@
-.sidebar {
-  width: 100%; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .sidebar {
-      position: fixed;
-      width: 33%; } }
-  @media (min-width: 1024px) {
-    .sidebar {
-      position: fixed;
-      width: 28%; } }
+body {
+  flex-direction: column; }
   @media (min-width: 768px) {
-    .sidebar {
-      height: 1500px; } }
+    body {
+      flex-direction: row; } }
 
-.main {
-  width: 100%; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .main {
-      width: 67%; } }
-  @media (min-width: 1024px) {
-    .main {
-      width: 72%; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar__wrapper {
+    position: fixed;
+    width: 33%; } }
+@media (min-width: 1024px) {
+  .sidebar__wrapper {
+    position: fixed;
+    width: 28%; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    width: 33%; } }
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 28%; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    width: 67%; } }
+@media (min-width: 1024px) {
+  .main {
+    width: 72%; } }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  margin: 0; }
+  margin: 0;
+  display: flex; }
 
 .sidebar {
-  float: left;
   text-align: center;
+  z-index: 1;
   background-color: #FFC3D0;
   box-shadow: 1px 0px 20px -2px rgba(0, 0, 0, 0.3); }
-  .sidebar > div {
+  .sidebar__wrapper > div {
     margin: 24px; }
   .sidebar__photo {
     margin: 24px auto !important;
@@ -48,7 +54,6 @@ body {
     text-decoration: none; }
 
 .main {
-  float: right;
   background-image: url("../background.jpg");
   background-attachment: fixed;
   background-position: center;
