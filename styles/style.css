@@ -1,0 +1,27 @@
+body {
+  padding-top: 16px;
+  background-color: paleturquoise; }
+
+.main {
+  padding: 16px;
+  width: 70%;
+  height: 90vh;
+  margin: auto;
+  border-radius: 10px;
+  border: 3px dashed #6bdada;
+  background-color: #ddfdfd;
+  position: relative; }
+
+.sidebar {
+  right: -10%;
+  position: absolute; }
+  .sidebar__item a {
+    color: black;
+    text-decoration: none; }
+    .sidebar__item a:hover {
+      font-weight: 600; }
+
+h1 {
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
