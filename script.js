@@ -1,3 +1,2 @@
-// Add this to HTML
-// <script src="script.js"></script>
+// jQuery Script (add if required)
 // <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
