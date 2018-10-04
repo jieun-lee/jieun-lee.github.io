@@ -2,8 +2,11 @@ $colour-page-bg: paleturquoise;
 $colour-main-bg: rgb(221, 253, 253);
 $colour-border-bg: rgb(107, 218, 218);
 // $colour-border-bg: #2e99ab;
+$shadow-default: rgba(0, 0, 0, 0.1) 2px 2px 2px 0px;
+$shadow-main: rgba(0, 0, 0, 0.1) 2px 2px 20px 0px;
 
 $border-main: 3px dashed $colour-border-bg;
+$border-underline: 2px solid $colour-border-bg;
 
 $padding-default: 16px;
 $padding-half: $padding-default / 2;
@@ -26,6 +29,7 @@ body {
     border: $border-main;
     background-color: $colour-main-bg;
     position: relative;
+    box-shadow: $shadow-main;
     
 }
 
@@ -48,6 +52,7 @@ body {
         transition: width 0.25s;
         border-left: $border-main;
         color: black;
+        box-shadow: $shadow-default;
 
         &:hover {
             width: 80px;
@@ -58,4 +63,8 @@ body {
 h1 {
     margin: 0;
     font-family: $font-header;
+    padding-top: $padding-default;
+    padding-bottom: $padding-default * 2;
+    text-align: center;
+    border-bottom: $border-underline;
 }
