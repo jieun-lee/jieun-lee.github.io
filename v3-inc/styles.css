@@ -1,6 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #232A4E;
     font-family: Source Sans Pro, Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
 }
 
 .nav {
@@ -94,10 +102,26 @@ body {
     font-variant: small-caps;
 }
 
-.main-text {
+.main__section__body {
     color: #FFFFFF;
-    text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 2px;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px;
 }
+
+.project__item:not(:last-child) {
+    padding-bottom: 1.5rem;
+}
+
+.project__item__title {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.project__item__skills {
+    font-style: italic;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -108,11 +132,9 @@ body {
     /* write css code here - mobile */
     .nav {
         width: 100%;
-        max-width: 500px;
         left: 50%;
         transform: translateX(-50%);
         border-bottom-right-radius: 0.5rem;
-        z-index: 0;
     }
 
     .intro {
