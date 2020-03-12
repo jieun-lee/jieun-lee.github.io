@@ -26,5 +26,52 @@ body {
     color: #FFFFFF;
     font-family: Roboto Slab, Helvetica, sans-serif;
     margin: 0 2rem 0 4rem;
-    font-size: 8rem;
+    font-size: 6rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* default is desktop size size */
+
+@media (max-width: 767px) {
+    /* write css code here - mobile */
+    .intro-container {
+        display: flex;
+    }
+
+    .intro-box {
+        margin: 2rem auto 0 auto;
+        height: fit-content;
+    }
+
+    .main-header {
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* write css code here - tablet */
+    .intro-box {
+        margin-top: 4rem;
+    }
+
+    .main-header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    /* write css code here - mobile and tablet */
+    /* NOTE: overwrites above code */
+}
+
+@media (min-width: 1800px) {
+    /* write css code here - large screen size */
+    .main-header {
+        font-size: 8rem;
+    }
 }
