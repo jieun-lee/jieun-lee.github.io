@@ -17,16 +17,27 @@ body {
 .intro-box {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 0.25rem;
-    display: inline-block;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.5rem 3rem 2rem 6rem;
     margin-top: 8rem;
 }
 
 .main-header {
     color: #FFFFFF;
     font-family: Roboto Slab, Helvetica, sans-serif;
-    margin: 0 2rem 0 4rem;
+    margin: 0;
     font-size: 6rem;
+}
+
+.main-text {
+    color: #FFFFFF;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 
@@ -39,17 +50,23 @@ body {
     /* write css code here - mobile */
     .intro-container {
         display: flex;
+        background-size: 200%;
     }
 
     .intro-box {
         margin: 2rem auto 0 auto;
         height: fit-content;
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
     }
 
     .main-header {
         font-size: 4rem;
         text-align: center;
         margin: 0;
+    }
+
+    .main-text {
+        text-align: center;
     }
 }
 
