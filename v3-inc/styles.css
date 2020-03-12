@@ -1,0 +1,110 @@
+body {
+    background-color: #232A4E;
+}
+
+.intro-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("bgimage.jpg"); /* 5x3 */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.intro-box {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1.5rem 3rem 2rem 6rem;
+    margin-top: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px 12px;
+}
+
+.intro-header {
+    color: #FFFFFF;
+    font-family: Roboto Slab, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 6rem;
+}
+
+.intro-text {
+    color: #FFFFFF;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: auto;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.main-container {
+    background-color: #232A4E;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60vw; /* for 5x3 background image */
+}
+
+.main-text {
+    color: #FFFFFF;
+}
+
+
+/* MEDIA QUERIES */
+
+/* default is desktop size size */
+
+@media (max-width: 767px) {
+    /* write css code here - mobile */
+    .intro-container {
+        display: flex;
+        background-size: 200%;
+    }
+
+    .intro-box {
+        margin: 2rem auto 0 auto;
+        height: fit-content;
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+    }
+
+    .intro-header {
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .main-container {
+        top: 120vw; /* for 5x3 background image */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* write css code here - tablet */
+    .intro-box {
+        margin-top: 4rem;
+    }
+
+    .intro-header {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    /* write css code here - mobile and tablet */
+    /* NOTE: overwrites above code */
+}
+
+@media (min-width: 1800px) {
+    /* write css code here - large screen size */
+    .intro-header {
+        font-size: 8rem;
+    }
+}
