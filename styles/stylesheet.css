@@ -34,7 +34,7 @@ body {
 .sidebar {
   text-align: center;
   z-index: 1;
-  background-color: #FFC3D0;
+  background-color: #b2c2d4;
   box-shadow: 1px 0px 20px -2px rgba(0, 0, 0, 0.3); }
   .sidebar__wrapper > div {
     margin: 24px; }
@@ -43,8 +43,8 @@ body {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    border: 5px solid white;
-    border-radius: 100%; }
+    border-radius: 100%;
+    box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3); }
     .sidebar__photo__img {
       height: 100%; }
   .sidebar__heading {
