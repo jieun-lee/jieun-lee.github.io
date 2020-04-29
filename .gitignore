@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+dist
 
 # local env files
 .env.local
@@ -22,7 +22,7 @@ yarn-error.log*
 
 # Files for Build
 vue.config.js
-build-move.sh
+build-setup.sh
 
 # SASS
 .sass-cache
