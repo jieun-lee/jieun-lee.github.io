@@ -9,7 +9,8 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "@/scss/_variables.scss";
 /* Copied from V3 */
 .nav {
     display: flex;
@@ -19,19 +20,19 @@
     top: 0;
     right: 0;
     padding: 0.5rem 1.25rem;
-    background-color: #000000;
+    background-color: $color-grey-darkest;
     border-bottom-left-radius: 0.5rem;
 }
 
 .nav__link {
-    color: #FFFFFF;
+    color: $color-grey-lightest;
     margin: auto;
     text-decoration: none;
 }
 
 .nav__link:hover {
     font-weight: 500;
-    color: rgb(50, 197, 223);
+    color: $color-blue-base;
 }
 
 @media (max-width: 767px) {

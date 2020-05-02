@@ -28,10 +28,10 @@ export default {
   min-height: 300px;
 
   &--dark {
-    background-color: $test-color-dark;
+    background-color: $color-blue-light;
   }
   &--light {
-    background-color: $test-color-light;
+    background-color: $color-blue-lighter;
   }
 
   &__wrapper {
@@ -41,7 +41,7 @@ export default {
   }
 
   &__title {
-  color: $test-text-color;
+  color: $color-text;
   letter-spacing: 5px;
   }
 }

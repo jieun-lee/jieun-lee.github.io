@@ -1,3 +1,22 @@
-$test-color-light: #b8eeff;
-$test-color-dark: #229ce3;
-$test-text-color: #303a40;
+// COLOURS
+
+// Greys
+$color-grey-lightest: #eff6fa;
+$color-grey-lighter: #d1dadf;
+$color-grey-light: #949b9f;
+$color-grey-base: #61676a;
+$color-grey-dark: #3a3f41;
+$color-grey-darker: #2e3132;
+$color-grey-darkest: #202324;
+
+// Blues
+$color-blue-lightest: #e6f8ff;
+$color-blue-lighter: #c1f0fd;
+$color-blue-light: #76d6f5;
+$color-blue-base: #2fbae7;
+$color-blue-dark: #1595ca;
+$color-blue-darker: #004e7f;
+$color-blue-darkest: #093255;
+
+// Common
+$color-text: $color-grey-darkest;
