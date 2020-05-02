@@ -1,14 +1,12 @@
 <template>
-  <div class="about">
-    <p class="about__title">About</p>
+  <div class="section" id="about">
+    <p class="section__title">About</p>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
-.about {
-  &__title {
-    color: $test-colour;
-  }
+#about {
+  background-color: $test-color-dark;
 }
 </style>
