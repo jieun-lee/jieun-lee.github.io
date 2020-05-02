@@ -1,0 +1,65 @@
+// media queries
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// sidebar widths
+$sidebar-width-tablet: 33%;
+$sidebar-width-desktop: 28%;
+
+@mixin tabletplus {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+body {
+    flex-direction: column;
+
+    @include tabletplus {
+        flex-direction: row;
+    }
+}
+
+.sidebar {
+    &__wrapper {
+        @include tablet {
+            position: fixed;
+            width: $sidebar-width-tablet;
+        }
+
+        @include desktop {
+            position: fixed;
+            width: $sidebar-width-desktop;
+        }
+    }
+
+    @include tablet {
+        width: $sidebar-width-tablet;
+    }
+
+    @include desktop {
+        width: $sidebar-width-desktop;
+    }
+}
+
+.main {
+    @include tablet {
+        width: 100% - $sidebar-width-tablet;
+    }
+
+    @include desktop {
+        width: 100% - $sidebar-width-desktop;
+    }
+}
