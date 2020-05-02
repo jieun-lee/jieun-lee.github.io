@@ -3,8 +3,10 @@
     <NavBar />
     <IntroSection />
     <AboutSection />
-    <ProjectsSection />
     <SkillsSection />
+    <ProjectsSection />
+    <InterestsSection />
+    <OutroSection />
   </div>
 </template>
 
@@ -12,16 +14,20 @@
 import NavBar from "@/components/NavBar.vue";
 import IntroSection from "@/sections/IntroSection.vue";
 import AboutSection from "@/sections/AboutSection.vue";
-import ProjectsSection from "@/sections/ProjectsSection.vue";
 import SkillsSection from "@/sections/SkillsSection.vue";
+import ProjectsSection from "@/sections/ProjectsSection.vue";
+import InterestsSection from "@/sections/InterestsSection.vue";
+import OutroSection from "@/sections/OutroSection.vue";
 export default {
   name: 'App',
   components: {
     NavBar,
     IntroSection,
     AboutSection,
+    SkillsSection,
     ProjectsSection,
-    SkillsSection
+    InterestsSection,
+    OutroSection
   }
 }
 </script>
