@@ -7,6 +7,7 @@
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 #intro {
+  min-height: 200px;
   background-color: $test-color-light;
 }
 </style>

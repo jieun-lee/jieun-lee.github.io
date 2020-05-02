@@ -1,12 +1,18 @@
 <template>
-  <div class="section" id="interests">
-    <p class="section__title">Interests</p>
-  </div>
+  <Section id="interests" theme="light">
+    My Interests
+  </Section>
 </template>
+
+<script>
+import Section from "@/components/Section.vue";
+export default {
+  components: {
+    Section
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
-#interests {
-  background-color: $test-color-light;
-}
 </style>
