@@ -1,6 +1,6 @@
 <template>
   <Section id="skills" theme="light">
-    <SkillsButtonBar />
+    <SkillsButtonBar @category-updated="updateCategory" />
     <SkillItem
       v-for="(skill, index) in this.filteredSkills"
       :key="index"
@@ -23,7 +23,7 @@ export default {
   },
   data() {
     return {
-      category: "Programming",
+      category: "All",
       skills: [
         {name:"HTML", level:90, categories:['Web']},
         {name:"CSS/SCSS", level:90, categories:['Web']},
@@ -41,9 +41,16 @@ export default {
   },
   computed: {
     filteredSkills() {
-      return this.skills.filter((skill) => {
-        return skill.categories.includes(this.category);
-      })
+      if (this.category === "All") {
+        return this.skills;
+      } else {
+        return this.skills.filter((skill) => skill.categories.includes(this.category));
+      }
+    }
+  },
+  methods: {
+    updateCategory(category) {
+      this.category = category;
     }
   }
 }

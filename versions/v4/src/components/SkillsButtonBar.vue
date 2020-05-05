@@ -24,6 +24,7 @@ export default {
   methods: {
     onButtonClick(value) {
       this.selected = value;
+      this.$emit("category-updated", value);
     }
   }
 }
