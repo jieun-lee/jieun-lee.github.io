@@ -2,8 +2,12 @@
   <div class="skill">
     <div class="skill__label">{{ name }}</div>
     <div class="skill__bar">
-      <div class="skill__bar__value">{{ level+"%" }}</div>
-      <div class="skill__bar__filled" :style="{width:level+'%'}"></div>
+      <div class="skill__bar__value">{{ level }}<span class="skill__bar__value__percent">%</span></div>
+      <div
+        class="skill__bar__filled"
+        :class="[colored ? 'skill__bar__filled--color' : '']"
+        :style="{width:level+'%'}">
+      </div>
     </div>
   </div>
 </template>
@@ -50,13 +54,21 @@ $bar-border-radius: 8px;
       padding: 2.5px 6px;
       font-size: 14px;
       color: $color-grey-light;
+
+      &__percent {
+        font-size:12px;
+      }
     }
 
     &__filled {
-      background-color: $color-blue-base;
+      background-color: $color-grey-light;
       border-top-left-radius: $bar-border-radius;
       border-bottom-left-radius: $bar-border-radius;
       height: 100%;
+
+      &--color {
+        background-color: $color-blue-base;
+      }
     }
   }
 }
