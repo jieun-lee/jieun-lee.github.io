@@ -1,14 +1,16 @@
 <template>
   <Section id="skills" theme="light">
     <div class="skills__button-bar">
+      <SkillButton type="All" />
       <SkillButton type="Programming" />
       <SkillButton type="Web" />
       <SkillButton type="Mobile" />
       <SkillButton type="Other" />
     </div>
-    <SkillItem name="Java" :level="75" :categories="['Programming', 'Mobile']" />
     <SkillItem name="JavaScript" :level="80" :categories="['Programming', 'Web']" />
+    <SkillItem name="Java" :level="75" :categories="['Programming', 'Mobile']" />
     <SkillItem name="React Native" :level="65" :categories="['Mobile']" />
+    <SkillItem name="Node.js" :level="35" :categories="['Web']" />
   </Section>
 </template>
 
