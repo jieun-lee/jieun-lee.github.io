@@ -1,11 +1,22 @@
 <template>
-  <div class="skills-button">{{ type }}</div>
+  <div
+    class="skills-button"
+    :class="[this.isSelected ? 'skills-button--selected' : '']"
+    @click="onClick()">{{ type }}
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    type: String
+    type: String,
+    isSelected: Boolean
+  },
+  methods: {
+    onClick() {
+      // SkillsButtonBar is listening to this event
+      this.$emit("clicked", this.type);
+    }
   }
 }
 </script>
@@ -18,5 +29,9 @@ export default {
   border-radius: 12px;
   margin: 4px;
   padding: 4px 12px;
+
+  &--selected {
+    background-color: $color-blue-darker;
+  }
 }
 </style>
