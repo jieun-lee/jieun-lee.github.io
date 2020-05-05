@@ -44,7 +44,7 @@ export default {
           description: "Mini browser game involving memorizing short menus and typing",
           links: {
             code: "https://github.com/jieun-lee/type-the-food",
-            try: "https://jieun-lee.github.io/type-the-food/"
+            run: "https://jieun-lee.github.io/type-the-food/"
           }
         },
         {
@@ -63,7 +63,7 @@ export default {
           description: "In-browser drum kit with a basic Kick, Snare, Hi-Hat, and Crash (sounds from Focusrite)",
           links: {
             code: "https://github.com/jieun-lee/mini-drum-kit",
-            try: "https://jieun-lee.github.io/mini-drum-kit/"
+            run: "https://jieun-lee.github.io/mini-drum-kit/"
           }
         },
       ],
@@ -90,7 +90,7 @@ export default {
           description: "V1 made with Java, V2 made with JavaScript. Mini game where a vegetable files up and down to avoid hitting obstacles",
           links: {
             code: "https://github.com/jieun-lee/fly-vegetable",
-            try: "https://jieun-lee.github.io/fly-vegetable/JavaScript/main.html"
+            run: "https://jieun-lee.github.io/fly-vegetable/JavaScript/main.html"
           }
         }
       ],

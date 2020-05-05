@@ -2,11 +2,19 @@
   <div class="project-details" :class="[ isFeatured ? 'project-details--featured' : '']">
     <div class="project-details__name">{{ this.name }}</div>
     <div class="project-details__description">{{ this.description }}</div>
+    <ProjectSkills :skills="this.skills" />
+    <ProjectLinks :links="this.links" />
   </div>
 </template>
 
 <script>
+import ProjectSkills from "@/components/ProjectSkills.vue";
+import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
+  components: {
+    ProjectSkills,
+    ProjectLinks
+  },
   props: {
     name: String,
     skills: Array,
@@ -25,6 +33,7 @@ export default {
 
   &--featured {
     padding: 16px;
+    width: 100%;
   }
 
   &__name {

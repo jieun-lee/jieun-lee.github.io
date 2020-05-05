@@ -35,6 +35,7 @@ export default {
   min-height: 200px;
   flex: 1 1 0;
   justify-content: space-between;
+  box-shadow: 4px 4px 0 0 $color-blue-base;
 
   &:not(:last-child) {
     margin-right: 16px;

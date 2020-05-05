@@ -35,12 +35,13 @@ export default {
   background-color: $color-blue-lightest;
   margin-bottom: 16px;
   border-radius: $border-radius-default;
+  box-shadow: 4px 4px 0 0 $color-blue-base;
 
   &__image {
-    max-width: 225px;
+    max-width: 250px;
     border-top-left-radius: $border-radius-default;
     border-bottom-left-radius: $border-radius-default;
-    border-right: 2px solid $color-grey-lighter;
+    border-right: 2px solid $color-grey-lightest;
   }
 }
 </style>

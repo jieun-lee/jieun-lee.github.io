@@ -29,14 +29,15 @@ export default {
   border-radius: $border-radius-button;
   margin: 4px;
   padding: 4px 12px;
-  cursor: default;
 
   &--selected {
     background-color: $color-blue-darker;
+    cursor: default;
   }
 
   &:hover:not(&--selected) {
     background-color: $color-blue-base;
+    cursor: pointer;
   }
 
 }
