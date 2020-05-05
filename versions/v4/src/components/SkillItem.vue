@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     colored() {
-      return (this.level > 50);
+      return (this.level > 70);
     }
   }
 }

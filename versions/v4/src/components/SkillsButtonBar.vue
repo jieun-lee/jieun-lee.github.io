@@ -15,9 +15,12 @@ export default {
   components: {
     SkillButton
   },
+  props: {
+    startCategory: String
+  },
   data() {
     return {
-      selected: "All",
+      selected: this.startCategory,
       types: ["All", "Programming", "Web", "Mobile", "Other"]
     }
   },

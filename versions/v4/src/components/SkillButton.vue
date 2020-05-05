@@ -29,9 +29,15 @@ export default {
   border-radius: 12px;
   margin: 4px;
   padding: 4px 12px;
+  cursor: default;
 
   &--selected {
     background-color: $color-blue-darker;
   }
+
+  &:hover:not(&--selected) {
+    background-color: $color-blue-base;
+  }
+
 }
 </style>

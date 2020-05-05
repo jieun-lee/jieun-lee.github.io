@@ -1,6 +1,6 @@
 <template>
   <Section id="skills" theme="light">
-    <SkillsButtonBar @category-updated="updateCategory" />
+    <SkillsButtonBar @category-updated="updateCategory" :startCategory="this.category" />
     <SkillItem
       v-for="(skill, index) in this.filteredSkills"
       :key="index"
@@ -23,18 +23,26 @@ export default {
   },
   data() {
     return {
-      category: "All",
+      category: "Programming",
       skills: [
         {name:"HTML", level:90, categories:['Web']},
         {name:"CSS/SCSS", level:90, categories:['Web']},
-        {name:"JavaScript", level:85, categories:['Programming', 'Web']},
-        {name:"Java", level:80, categories:['Programming', 'Mobile']},
+        {name:"JavaScript", level:80, categories:['Programming', 'Web']},
+        {name:"Java", level:75, categories:['Programming', 'Mobile']},
         {name:"Vue.js", level:70, categories:['Web']},
-        {name:"TypeScript", level:70, categories:['Programming', 'Web']},
+        {name:"jQuery", level:70, categories:['Web']},
+        {name:"TypeScript", level:65, categories:['Programming', 'Web']},
+        {name:"React", level:65, categories:['Web']},
         {name:"React Native", level:65, categories:['Mobile']},
-        {name:"Python", level:60, categories:['Programming']},
+        {name:"Jasmine", level:65, categories:['Web']},
+        {name:"Git", level:60, categories:['Other']},
+        {name:"Photoshop", level:60, categories:['Other']},
+        {name:"Twig", level:55, categories:['Web']},
+        {name:"Python", level:50, categories:['Programming']},
         {name:"SQL", level:50, categories:['Other']},
-        {name:"PHP", level:45, categories:['Web']},
+        {name:"ThreeJS", level:50, categories:['Web', 'Other']},
+        {name:"PHP", level:40, categories:['Web']},
+        {name:"Matlab", level:40, categories:['Other']},
         {name:"Node.js", level:35, categories:['Web']},
       ]
     }
