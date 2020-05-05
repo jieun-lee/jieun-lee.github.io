@@ -41,8 +41,9 @@ export default {
   }
 
   &__title {
-  color: $color-text;
+  color: $color-grey-darkest;
   letter-spacing: 5px;
+  text-align: center;
   }
 }
 </style>

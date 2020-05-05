@@ -1,22 +1,38 @@
 <template>
   <Section id="skills" theme="light">
-    Skills go Here
-    <SkillBar name="Java" level=75 categories="['programming']" />
-    <SkillBar name="JavaScript" level=80 categories="['programming', 'web']" />
+    <div class="skills__button-bar">
+      <SkillButton type="Programming" />
+      <SkillButton type="Web" />
+      <SkillButton type="Mobile" />
+      <SkillButton type="Other" />
+    </div>
+    <SkillItem name="Java" :level="75" :categories="['Programming', 'Mobile']" />
+    <SkillItem name="JavaScript" :level="80" :categories="['Programming', 'Web']" />
+    <SkillItem name="React Native" :level="65" :categories="['Mobile']" />
   </Section>
 </template>
 
 <script>
 import Section from "@/components/Section.vue";
-import SkillBar from "@/components/SkillBar.vue";
+import SkillButton from "@/components/SkillButton.vue";
+import SkillItem from "@/components/SkillItem.vue";
 export default {
   components: {
     Section,
-    SkillBar
+    SkillButton,
+    SkillItem
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+
+.skills {
+  &__button-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 </style>
