@@ -1,7 +1,7 @@
 <template>
   <div class="section" :class="'section--'+theme" :id=id>
     <div class="section__wrapper">
-      <h3 class="section__title">{{ title }}</h3>
+      <h2 class="section__title">{{ title }}</h2>
     <slot></slot>
     </div>
   </div>
