@@ -1,22 +1,28 @@
 <template>
   <div class="featured-project">
     <img class="featured-project__image" :src="require(`../assets/projects/${this.imgsrc}.jpg`)" />
-    <div class="featured-project__details">
-      <div class="featured-project__name">{{ name }}</div>
-      <div class="featured-project__description">{{ description }}</div>
-    </div>
+    <ProjectDetails
+      :name="this.name"
+      :skills="this.skills"
+      :description="this.description"
+      :links="this.links"
+      :isFeatured="true"
+    />
   </div>
 </template>
 
 <script>
+import ProjectDetails from "@/components/ProjectDetails.vue";
 export default {
+  components: {
+    ProjectDetails
+  },
   props: {
     name: String,
     imgsrc: String,
     skills: Array,
     description: String,
-    github: String,
-    playlink: String
+    links: Object
   }
 }
 </script>
@@ -35,19 +41,6 @@ export default {
     border-top-left-radius: $border-radius-default;
     border-bottom-left-radius: $border-radius-default;
     border-right: 2px solid $color-grey-lighter;
-  }
-
-  &__details {
-    padding: 16px;
-  }
-
-  &__name {
-    font-weight: 600;
-    font-size: 18px;
-  }
-
-  &__description {
-    font-size: 14px;
   }
 }
 </style>

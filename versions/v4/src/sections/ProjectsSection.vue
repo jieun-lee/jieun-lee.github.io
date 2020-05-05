@@ -8,8 +8,7 @@
         :imgsrc="project.imgsrc"
         :skills="project.skills"
         :description="project.description"
-        :github="project.github"
-        :playlink="project.playlink"
+        :links="project.links"
       />
     </div>
     <div class="other-projects">
@@ -19,8 +18,7 @@
       :name="project.name"
       :skills="project.skills"
       :description="project.description"
-      :github="project.github"
-      :playlink="project.playlink"
+      :links="project.links"
     />
     </div>
   </Section>
@@ -44,24 +42,29 @@ export default {
           imgsrc: "type-the-food",
           skills: ["JavaScript", "CSS/SCSS", "HTML"],
           description: "Mini browser game involving memorizing short menus and typing",
-          github: "https://github.com/jieun-lee/type-the-food",
-          playlink: "https://jieun-lee.github.io/type-the-food/"
+          links: {
+            code: "https://github.com/jieun-lee/type-the-food",
+            try: "https://jieun-lee.github.io/type-the-food/"
+          }
         },
         {
           name: "Ice Cream Game",
           imgsrc: "ice-cream-game",
           skills: ["Java", "Java Swing"],
           description: "Original Monopoly-like board game. Two players move around the board, buying ice cream flavours and collecting stars",
-          github: "https://github.com/jieun-lee/ice-cream-game",
-          playlink: ""
+          links: {
+            code: "https://github.com/jieun-lee/ice-cream-game"
+          }
         },
         {
           name: "Mini Drum Kit",
           imgsrc: "mini-drum-kit",
           skills: ["JavaScript", "Vue.js", "CSS", "HTML"],
           description: "In-browser drum kit with a basic Kick, Snare, Hi-Hat, and Crash (sounds from Focusrite)",
-          github: "https://github.com/jieun-lee/mini-drum-kit",
-          playlink: "https://jieun-lee.github.io/mini-drum-kit/"
+          links: {
+            code: "https://github.com/jieun-lee/mini-drum-kit",
+            try: "https://jieun-lee.github.io/mini-drum-kit/"
+          }
         },
       ],
       otherProjects: [
@@ -69,22 +72,26 @@ export default {
           name: "inGRADEient",
           skills: ["React Native"],
           description: "Mobile app used to obtain feedback about product ingredient labels, made for NW Hacks 2020",
-          github: "https://github.com/hurjun1995/nwhacks2020_inGRADEient",
-          playlink: ""
+          links: {
+            code: "https://github.com/hurjun1995/nwhacks2020_inGRADEient"
+          }
         },
         {
           name: "Cookbook Database",
           skills: ["JavaScript", "PHP", "SQL", "CSS", "HTML"],
           description: "Group project for a databases course at school. A recipe database where users can upload their own recipes and manage their own cookbooks",
-          github: "https://github.com/soohyunkim/Cookbook",
-          playlink: "link"
+          links: {
+            code: "https://github.com/soohyunkim/Cookbook"
+          }
         },
         {
           name: "Flying Vegetable",
           skills: ["Java", "Java Swing", "JavaScript", "HTML Canvas"],
           description: "V1 made with Java, V2 made with JavaScript. Mini game where a vegetable files up and down to avoid hitting obstacles",
-          github: "https://github.com/jieun-lee/fly-vegetable",
-          playlink: "https://jieun-lee.github.io/fly-vegetable/JavaScript/main.html"
+          links: {
+            code: "https://github.com/jieun-lee/fly-vegetable",
+            try: "https://jieun-lee.github.io/fly-vegetable/JavaScript/main.html"
+          }
         }
       ],
     }

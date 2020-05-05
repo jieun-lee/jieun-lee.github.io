@@ -1,17 +1,26 @@
 <template>
   <div class="other-project">
-    {{ name }}
+    <ProjectDetails
+      :name="this.name"
+      :skills="this.skills"
+      :description="this.description"
+      :links="this.links"
+      :isFeatured="false"
+    />
   </div>
 </template>
 
 <script>
+import ProjectDetails from "@/components/ProjectDetails.vue";
 export default {
+  components: {
+    ProjectDetails
+  },
   props: {
     name: String,
     skills: Array,
     description: String,
-    github: String,
-    playlink: String
+    links: Object
   }
 }
 </script>
