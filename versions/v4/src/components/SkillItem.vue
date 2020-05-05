@@ -29,7 +29,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
-$bar-border-radius: 8px;
 
 .skill {
   display: flex;
@@ -44,7 +43,7 @@ $bar-border-radius: 8px;
 
   &__bar {
     background-color: $color-grey-lightest;
-    border-radius: $bar-border-radius;
+    border-radius: $border-radius-default;
     height: 24px;
     width: 100%;
 
@@ -62,8 +61,8 @@ $bar-border-radius: 8px;
 
     &__filled {
       background-color: $color-grey-light;
-      border-top-left-radius: $bar-border-radius;
-      border-bottom-left-radius: $bar-border-radius;
+      border-top-left-radius: $border-radius-default;
+      border-bottom-left-radius: $border-radius-default;
       height: 100%;
 
       &--color {

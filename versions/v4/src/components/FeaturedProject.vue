@@ -1,8 +1,10 @@
 <template>
   <div class="featured-project">
     <img class="featured-project__image" :src="require(`../assets/projects/${this.imgsrc}.jpg`)" />
-    <div class="featured-project__name">{{ name }}</div>
-    <div class="featured-project__description">{{ description }}</div>
+    <div class="featured-project__details">
+      <div class="featured-project__name">{{ name }}</div>
+      <div class="featured-project__description">{{ description }}</div>
+    </div>
   </div>
 </template>
 
@@ -21,20 +23,27 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
-@import "@/scss/_mixins.scss";
 
 .featured-project {
-  @include project-card;
+  display: flex;
+  background-color: $color-blue-lightest;
+  margin-bottom: 16px;
+  border-radius: $border-radius-default;
 
   &__image {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 0 4px 1px rgba(1, 0, 0, 0.1);
+    max-width: 225px;
+    border-top-left-radius: $border-radius-default;
+    border-bottom-left-radius: $border-radius-default;
+    border-right: 2px solid $color-grey-lighter;
+  }
+
+  &__details {
+    padding: 16px;
   }
 
   &__name {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   &__description {

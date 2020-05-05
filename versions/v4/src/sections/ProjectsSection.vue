@@ -1,6 +1,6 @@
 <template>
   <Section id="projects" theme="dark">
-    <div class="projects-wrapper">
+    <div class="featured-projects">
       <FeaturedProject
         v-for="project in featuredProjects"
         :key="project.name"
@@ -12,7 +12,7 @@
         :playlink="project.playlink"
       />
     </div>
-    <div class="projects-wrapper">
+    <div class="other-projects">
       <OtherProject
       v-for="project in otherProjects"
       :key="project.name"
@@ -66,6 +66,13 @@ export default {
       ],
       otherProjects: [
         {
+          name: "inGRADEient",
+          skills: ["React Native"],
+          description: "Mobile app used to obtain feedback about product ingredient labels, made for NW Hacks 2020",
+          github: "https://github.com/hurjun1995/nwhacks2020_inGRADEient",
+          playlink: ""
+        },
+        {
           name: "Cookbook Database",
           skills: ["JavaScript", "PHP", "SQL", "CSS", "HTML"],
           description: "Group project for a databases course at school. A recipe database where users can upload their own recipes and manage their own cookbooks",
@@ -88,7 +95,12 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 
-.projects-wrapper {
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-projects {
   display: flex;
 }
 </style>

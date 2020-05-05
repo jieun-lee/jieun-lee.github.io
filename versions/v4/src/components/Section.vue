@@ -26,6 +26,7 @@ export default {
 
 .section {
   min-height: 300px;
+  padding: 24px 12px;
 
   &--dark {
     background-color: $color-blue-light;
@@ -36,7 +37,7 @@ export default {
 
   &__wrapper {
     width: 100%;
-    max-width: 700px;
+    max-width: 768px;
     margin: auto;
   }
 
@@ -44,6 +45,8 @@ export default {
   color: $color-grey-darkest;
   letter-spacing: 5px;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
   }
 }
 </style>

@@ -26,7 +26,7 @@ export default {
 .skills-button {
   color: $color-grey-lightest;
   background-color: $color-blue-dark;
-  border-radius: 12px;
+  border-radius: $border-radius-button;
   margin: 4px;
   padding: 4px 12px;
   cursor: default;

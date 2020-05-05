@@ -18,9 +18,17 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
-@import "@/scss/_mixins.scss";
 
 .other-project {
-  @include project-card;
+  background-color: $color-blue-lightest;
+  border-radius: $border-radius-default;
+  padding: 12px;
+  min-height: 200px;
+  flex: 1 1 0;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 </style>
