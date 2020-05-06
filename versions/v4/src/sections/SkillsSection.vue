@@ -15,6 +15,7 @@
 import Section from "@/components/Section.vue";
 import SkillsButtonBar from "@/components/SkillsButtonBar.vue";
 import SkillItem from "@/components/SkillItem.vue";
+import skillsData from "@/data/skills.json";
 export default {
   components: {
     Section,
@@ -24,27 +25,7 @@ export default {
   data() {
     return {
       category: "Programming",
-      skills: [
-        {name:"HTML", level:90, categories:['Web']},
-        {name:"CSS/SCSS", level:90, categories:['Web']},
-        {name:"JavaScript", level:80, categories:['Programming', 'Web']},
-        {name:"Java", level:75, categories:['Programming', 'Mobile']},
-        {name:"Vue.js", level:70, categories:['Web']},
-        {name:"jQuery", level:70, categories:['Web']},
-        {name:"TypeScript", level:65, categories:['Programming', 'Web']},
-        {name:"React", level:65, categories:['Web']},
-        {name:"React Native", level:65, categories:['Mobile']},
-        {name:"Jasmine", level:65, categories:['Web']},
-        {name:"Git", level:60, categories:['Other']},
-        {name:"Photoshop", level:60, categories:['Other']},
-        {name:"Twig", level:55, categories:['Web']},
-        {name:"Python", level:50, categories:['Programming']},
-        {name:"SQL", level:50, categories:['Other']},
-        {name:"ThreeJS", level:50, categories:['Web', 'Other']},
-        {name:"PHP", level:40, categories:['Web']},
-        {name:"Matlab", level:40, categories:['Other']},
-        {name:"Node.js", level:35, categories:['Web']},
-      ]
+      skills: skillsData.skills
     }
   },
   computed: {

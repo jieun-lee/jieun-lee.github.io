@@ -11,6 +11,7 @@
 
 <script>
 import SkillButton from "@/components/SkillButton.vue";
+import skillsData from "@/data/skills.json";
 export default {
   components: {
     SkillButton
@@ -21,7 +22,7 @@ export default {
   data() {
     return {
       selected: this.startCategory,
-      types: ["All", "Programming", "Web", "Mobile", "Other"]
+      types: skillsData.categories
     }
   },
   methods: {
