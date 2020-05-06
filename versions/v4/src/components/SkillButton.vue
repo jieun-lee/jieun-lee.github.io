@@ -15,7 +15,7 @@ export default {
   methods: {
     onClick() {
       // SkillsButtonBar is listening to this event
-      this.$emit("clicked", this.type);
+      this.$emit("skill-btn-clicked", this.type);
     }
   }
 }

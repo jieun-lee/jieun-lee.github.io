@@ -3,20 +3,19 @@
     <div class="interests-wrapper">
       <InterestCard
         :name="this.interests[indexLeft]['name']"
-        :imgsrc="this.interests[indexLeft]['imgsrc']"
         position="left"
+        @interest-clicked="clicked('left')"
       />
       <InterestCard
         :name="this.interests[indexMid]['name']"
-        :imgsrc="this.interests[indexMid]['imgsrc']"
         :description="this.interests[indexMid]['description']"
         :link="this.interests[indexMid]['link']"
         position="mid"
       />
       <InterestCard
         :name="this.interests[indexRight]['name']"
-        :imgsrc="this.interests[indexRight]['imgsrc']"
         position="right"
+        @interest-clicked="clicked('right')"
       />
     </div>
   </Section>
@@ -49,9 +48,9 @@ export default {
   methods: {
     clicked(side) {
       if (side === "right") {
-        indexLeft = (indexLeft + 1) % this.numInterests;
+        this.indexLeft = (this.indexLeft + 1) % this.numInterests;
       } else if (side === "left") {
-        indexLeft = (indexLeft - 1) % this.numInterests;
+        this.indexLeft = (this.indexLeft + this.numInterests - 1) % this.numInterests;
       }
     }
   }
@@ -63,5 +62,7 @@ export default {
 
 .interests-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

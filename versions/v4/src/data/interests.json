@@ -1,8 +1,7 @@
 {
   "interests": [
     {
-      "name": "Programming",
-      "imgsrc": "",
+      "name": "programming",
       "description": "Sort of obvious, right?",
       "link": {
         "label": "Github",
@@ -10,8 +9,7 @@
       }
     },
     {
-      "name": "Music",
-      "imgsrc": "",
+      "name": "music",
       "description": "I play piano. I play guitar. I play in a band. Or alone.",
       "link": {
         "label": "Instagram",
@@ -19,8 +17,7 @@
       }
     },
     {
-      "name": "Photography",
-      "imgsrc": "",
+      "name": "photography",
       "description": "I like taking pictures. Especially scenery, etc.",
       "link": {
         "label": "Portfolio",
@@ -28,8 +25,7 @@
       }
     },
     {
-      "name": "Travelling",
-      "imgsrc": "",
+      "name": "travelling",
       "description": "I like travelling and visiting new places. My favourite city is Vancouver. Prague was nice too.",
       "link": {
         "label": "Travel Photos",

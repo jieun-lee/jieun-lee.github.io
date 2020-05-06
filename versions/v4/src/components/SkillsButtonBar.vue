@@ -4,7 +4,7 @@
       :key="index"
       :type="type"
       :isSelected="(selected === type)"
-      @clicked="onButtonClick"
+      @skill-btn-clicked="onButtonClick"
     />
   </div>
 </template>
