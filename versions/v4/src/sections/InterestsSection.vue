@@ -1,18 +1,17 @@
 <template>
   <Section id="interests" theme="light">
     <div class="interests-wrapper">
-      <InterestCard
+      <InterestCardSub
         :name="this.interests[indexLeft]['name']"
         position="left"
         @interest-clicked="clicked('left')"
       />
-      <InterestCard
+      <InterestCardMid
         :name="this.interests[indexMid]['name']"
         :description="this.interests[indexMid]['description']"
         :link="this.interests[indexMid]['link']"
-        position="mid"
       />
-      <InterestCard
+      <InterestCardSub
         :name="this.interests[indexRight]['name']"
         position="right"
         @interest-clicked="clicked('right')"
@@ -23,12 +22,14 @@
 
 <script>
 import Section from "@/components/Section.vue";
-import InterestCard from "@/components/InterestCard.vue";
+import InterestCardSub from "@/components/InterestCardSub.vue";
+import InterestCardMid from "@/components/InterestCardMid.vue";
 import interestsData from "@/data/interests.json";
 export default {
   components: {
     Section,
-    InterestCard
+    InterestCardSub,
+    InterestCardMid
   },
   data() {
     return {
