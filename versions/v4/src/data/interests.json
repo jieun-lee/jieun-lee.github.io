@@ -1,0 +1,40 @@
+{
+  "interests": [
+    {
+      "name": "Programming",
+      "imgsrc": "",
+      "description": "Sort of obvious, right?",
+      "link": {
+        "label": "Github",
+        "url": "https://github.com/jieun-lee"
+      }
+    },
+    {
+      "name": "Music",
+      "imgsrc": "",
+      "description": "I play piano. I play guitar. I play in a band. Or alone.",
+      "link": {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/je_pianooo/"
+      }
+    },
+    {
+      "name": "Photography",
+      "imgsrc": "",
+      "description": "I like taking pictures. Especially scenery, etc.",
+      "link": {
+        "label": "Portfolio",
+        "url": "https://jieun-lee.myportfolio.com/"
+      }
+    },
+    {
+      "name": "Travelling",
+      "imgsrc": "",
+      "description": "I like travelling and visiting new places. My favourite city is Vancouver. Prague was nice too.",
+      "link": {
+        "label": "Travel Photos",
+        "url": "https://jieun-lee.myportfolio.com/travel"
+      }
+    }
+  ]
+}
