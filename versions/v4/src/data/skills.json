@@ -1,10 +1,11 @@
 {
   "categories": [
-    "All",
+    "Featured",
     "Programming",
     "Web",
     "Mobile",
-    "Other"
+    "Other",
+    "View All"
   ],
   "skills": [
     {
@@ -23,8 +24,9 @@
     },
     {
       "name": "JavaScript",
-      "level": 80,
+      "level": 85,
       "categories": [
+        "Featured",
         "Programming",
         "Web"
       ]
@@ -33,21 +35,24 @@
       "name": "Java",
       "level": 75,
       "categories": [
+        "Featured",
         "Programming",
         "Mobile"
+      ]
+    },
+    {
+      "name": "React",
+      "level": 70,
+      "categories": [
+        "Featured",
+        "Web"
       ]
     },
     {
       "name": "Vue.js",
       "level": 70,
       "categories": [
-        "Web"
-      ]
-    },
-    {
-      "name": "jQuery",
-      "level": 70,
-      "categories": [
+        "Featured",
         "Web"
       ]
     },
@@ -55,14 +60,8 @@
       "name": "TypeScript",
       "level": 65,
       "categories": [
+        "Featured",
         "Programming",
-        "Web"
-      ]
-    },
-    {
-      "name": "React",
-      "level": 65,
-      "categories": [
         "Web"
       ]
     },
@@ -74,7 +73,7 @@
       ]
     },
     {
-      "name": "Jasmine",
+      "name": "jQuery",
       "level": 65,
       "categories": [
         "Web"
@@ -95,17 +94,17 @@
       ]
     },
     {
-      "name": "Twig",
-      "level": 55,
+      "name": "Jasmine",
+      "level": 60,
       "categories": [
         "Web"
       ]
     },
     {
-      "name": "Python",
-      "level": 50,
+      "name": "Twig",
+      "level": 55,
       "categories": [
-        "Programming"
+        "Web"
       ]
     },
     {
@@ -121,6 +120,13 @@
       "categories": [
         "Web",
         "Other"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": 45,
+      "categories": [
+        "Programming"
       ]
     },
     {

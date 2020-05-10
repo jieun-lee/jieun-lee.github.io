@@ -39,5 +39,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: -12px;
+    margin-bottom: 24px;
   }
 </style>

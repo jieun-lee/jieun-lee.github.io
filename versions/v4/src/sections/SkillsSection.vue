@@ -24,13 +24,13 @@ export default {
   },
   data() {
     return {
-      category: "Programming",
+      category: "Featured",
       skills: skillsData.skills
     }
   },
   computed: {
     filteredSkills() {
-      if (this.category === "All") {
+      if (this.category === "View All") {
         return this.skills;
       } else {
         return this.skills.filter((skill) => skill.categories.includes(this.category));

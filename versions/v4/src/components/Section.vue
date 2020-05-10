@@ -25,8 +25,7 @@ export default {
 @import "@/scss/_variables.scss";
 
 .section {
-  min-height: 300px;
-  padding: 24px 12px;
+  padding: 24px 12px 48px;
 
   &--dark {
     background-color: $color-green-300;
