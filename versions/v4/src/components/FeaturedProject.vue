@@ -32,16 +32,16 @@ export default {
 
 .featured-project {
   display: flex;
-  background-color: $color-blue-lightest;
+  background-color: $color-yellow-100;
   margin-bottom: 16px;
   border-radius: $border-radius-default;
-  box-shadow: 4px 4px 0 0 $color-blue-base;
+  box-shadow: 4px 4px 0 0 $color-project-shadow;
 
   &__image {
     max-width: 250px;
     border-top-left-radius: $border-radius-default;
     border-bottom-left-radius: $border-radius-default;
-    border-right: 2px solid $color-grey-lightest;
+    border-right: 2px solid $color-grey-100;
   }
 }
 </style>

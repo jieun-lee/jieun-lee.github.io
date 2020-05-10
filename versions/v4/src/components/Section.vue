@@ -29,10 +29,10 @@ export default {
   padding: 24px 12px;
 
   &--dark {
-    background-color: $color-blue-light;
+    background-color: $color-yellow-200;
   }
   &--light {
-    background-color: $color-blue-lighter;
+    background-color: $color-yellow-300;
   }
 
   &__wrapper {
@@ -42,7 +42,7 @@ export default {
   }
 
   &__title {
-  color: $color-grey-darkest;
+  color: $color-grey-900;
   letter-spacing: 5px;
   text-align: center;
   margin-top: 0px;

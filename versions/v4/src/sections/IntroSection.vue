@@ -8,6 +8,6 @@
 @import "@/scss/_variables.scss";
 #intro {
   min-height: 200px;
-  background-color: $color-blue-base;
+  background-color: $color-yellow-400;
 }
 </style>

@@ -36,7 +36,7 @@ $small-card-dims: 250px;
 $small-card-hover-dims: 255px;
 
 .interest-card-sub {
-  background-color: $color-blue-lightest;
+  background-color: $color-yellow-100;
   border-radius: $border-radius-default;
   width: $small-card-dims;
   height: $small-card-dims;

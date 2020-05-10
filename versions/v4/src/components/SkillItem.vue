@@ -42,7 +42,7 @@ export default {
   }
 
   &__bar {
-    background-color: $color-grey-lightest;
+    background-color: $color-grey-100;
     border-radius: $border-radius-default;
     height: 24px;
     width: 100%;
@@ -52,7 +52,7 @@ export default {
       height: 100%;
       padding: 2.5px 6px;
       font-size: 14px;
-      color: $color-grey-light;
+      color: $color-grey-300;
 
       &__percent {
         font-size:12px;
@@ -60,13 +60,13 @@ export default {
     }
 
     &__filled {
-      background-color: $color-grey-light;
+      background-color: $color-grey-300;
       border-top-left-radius: $border-radius-default;
       border-bottom-left-radius: $border-radius-default;
       height: 100%;
 
       &--color {
-        background-color: $color-blue-base;
+        background-color: $color-yellow-500;
       }
     }
   }

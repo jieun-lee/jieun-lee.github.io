@@ -24,19 +24,19 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 .skills-button {
-  color: $color-grey-lightest;
-  background-color: $color-blue-dark;
+  color: $color-grey-100;
+  background-color: $color-yellow-500;
   border-radius: $border-radius-button;
   margin: 4px;
   padding: 4px 12px;
 
   &--selected {
-    background-color: $color-blue-darker;
+    background-color: $color-yellow-700;
     cursor: default;
   }
 
   &:hover:not(&--selected) {
-    background-color: $color-blue-base;
+    background-color: $color-yellow-600;
     cursor: pointer;
   }
 

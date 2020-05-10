@@ -1,24 +1,40 @@
 // COLOURS
 
 // Greys
-$color-grey-lightest: #eff6fa;
-$color-grey-lighter: #d1dadf;
-$color-grey-light: #949b9f;
-$color-grey-base: #61676a;
-$color-grey-dark: #3a3f41;
-$color-grey-darker: #2e3132;
-$color-grey-darkest: #202324;
+$color-grey-100: #f9f7eb;
+$color-grey-200: #d9d6c5;
+$color-grey-300: #adaa9b;
+$color-grey-400: #817f75;
+$color-grey-500: #595752;
+$color-grey-600: #3f3d39;
+$color-grey-700: #242321;
+$color-grey-800: #191816;
+$color-grey-900: #100f0e;
+// Yellows
+$color-yellow-100: #fdfcef;
+$color-yellow-200: #fff9d3;
+$color-yellow-300: #fdee9e;
+$color-yellow-400: #f5d74e;
+$color-yellow-500: #e9ad1d;
+$color-yellow-600: #cf8b08;
+$color-yellow-700: #7c4d0b;
+$color-yellow-800: #3d2404;
+$color-yellow-900: #1d1204;
+// Greens
+$color-green-100: #e5fcca;
+$color-green-200: #b7ec7a;
+$color-green-300: #96da46;
+$color-green-400: #7fc512;
+$color-green-500: #599907;
+$color-green-600: #4a7308;
+$color-green-700: #344d0b;
+$color-green-800: #1c2b04;
+$color-green-900: #0e1a04;
 
-// Blues
-$color-blue-lightest: #e6f8ff;
-$color-blue-lighter: #c1f0fd;
-$color-blue-light: #76d6f5;
-$color-blue-base: #2fbae7;
-$color-blue-dark: #1595ca;
-$color-blue-darker: #004e7f;
-$color-blue-darkest: #093255;
+// Designated Colours
+$color-project-shadow: $color-yellow-500;
 
-// Shadows
+// Shadow Colours - need to change
 $shadow-lighter: #3a3f4140; // 25% opacity
 $shadow-darker: #20232466; // 40% opacity
 
@@ -26,3 +42,7 @@ $shadow-darker: #20232466; // 40% opacity
 // OTHER
 $border-radius-default: 8px;
 $border-radius-button: 12px;
+
+
+
+

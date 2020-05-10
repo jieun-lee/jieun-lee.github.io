@@ -20,19 +20,19 @@
     top: 0;
     right: 0;
     padding: 0.5rem 1.25rem;
-    background-color: $color-grey-darkest;
+    background-color: $color-grey-900;
     border-bottom-left-radius: 0.5rem;
 }
 
 .nav__link {
-    color: $color-grey-lightest;
+    color: $color-grey-100;
     margin: auto;
     text-decoration: none;
 }
 
 .nav__link:hover {
     font-weight: 500;
-    color: $color-blue-base;
+    color: $color-yellow-400;
 }
 
 @media (max-width: 767px) {

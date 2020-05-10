@@ -39,12 +39,12 @@ export default {
   place-content: flex-end;
 
   &__icon {
-    background-color: $color-blue-dark;
+    background-color: $color-yellow-400;
     border-radius: 100px;
     padding: 4px 10px;
     text-align: center;
     text-decoration: none;
-    color: $color-blue-lightest;
+    color: $color-yellow-100;
     font-weight: 600;
     margin-left: 4px;
   }

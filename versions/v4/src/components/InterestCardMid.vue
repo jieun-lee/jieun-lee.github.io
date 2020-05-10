@@ -31,7 +31,7 @@ export default {
 
 $mid-card-dims: 350px;
 $mid-card-margins: 0px 16px;
-$mid-card-bg: $color-grey-lightest;
+$mid-card-bg: $color-grey-100;
 
 .interest-card-mid {
   background-color: $mid-card-bg;
@@ -75,14 +75,14 @@ $mid-card-bg: $color-grey-lightest;
     }
 
     &__link {
-      background-color: $color-blue-light;
+      background-color: $color-yellow-400;
       padding: 4px 12px;
       border-radius: $border-radius-default;
       margin-right: 16px;
       margin-bottom: 16px;
       align-self: flex-end;
       text-decoration: none;
-      color: $color-blue-darker;
+      color: $color-yellow-600;
     }
   }
 }
