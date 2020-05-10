@@ -38,7 +38,7 @@ $mid-card-bg: $color-grey-100;
   border-radius: $border-radius-default;
   width: $mid-card-dims;
   height: $mid-card-dims;
-  box-shadow: 2px 2px 8px 0 $shadow-darker;
+  box-shadow: 2px 2px 8px 0 $shadow-green-900-40;
   z-index: 2;
   overflow: hidden;
 
@@ -75,14 +75,14 @@ $mid-card-bg: $color-grey-100;
     }
 
     &__link {
-      background-color: $color-yellow-400;
+      background-color: $color-button-green-bg;
       padding: 4px 12px;
       border-radius: $border-radius-default;
       margin-right: 16px;
       margin-bottom: 16px;
       align-self: flex-end;
       text-decoration: none;
-      color: $color-yellow-600;
+      color: $color-button-green-text;
     }
   }
 }

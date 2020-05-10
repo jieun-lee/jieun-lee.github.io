@@ -29,10 +29,10 @@ export default {
   padding: 24px 12px;
 
   &--dark {
-    background-color: $color-green-200;
+    background-color: $color-green-300;
   }
   &--light {
-    background-color: $color-yellow-300;
+    background-color: $color-green-200;
   }
 
   &__wrapper {

@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     colored() {
-      return (this.level > 70);
+      return (this.level > 65);
     }
   }
 }
@@ -42,7 +42,7 @@ export default {
   }
 
   &__bar {
-    background-color: $color-grey-100;
+    background-color: $color-green-100;
     border-radius: $border-radius-default;
     height: 24px;
     width: 100%;
@@ -66,7 +66,7 @@ export default {
       height: 100%;
 
       &--color {
-        background-color: $color-yellow-500;
+        background-color: $color-green-600;
       }
     }
   }

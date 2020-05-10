@@ -1,5 +1,5 @@
 <template>
-  <Section id="skills" theme="light">
+  <Section id="skills" theme="dark">
     <SkillsButtonBar @category-updated="updateCategory" :startCategory="this.category" />
     <SkillItem
       v-for="(skill, index) in this.filteredSkills"

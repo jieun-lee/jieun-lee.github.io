@@ -25,18 +25,18 @@ export default {
 @import "@/scss/_variables.scss";
 .skills-button {
   color: $color-grey-100;
-  background-color: $color-yellow-500;
+  background-color: $color-green-500;
   border-radius: $border-radius-button;
   margin: 4px;
   padding: 4px 12px;
 
   &--selected {
-    background-color: $color-yellow-700;
+    background-color: $color-green-800;
     cursor: default;
   }
 
   &:hover:not(&--selected) {
-    background-color: $color-yellow-600;
+    background-color: $color-green-600;
     cursor: pointer;
   }
 

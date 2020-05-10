@@ -1,5 +1,5 @@
 <template>
-  <Section id="about" theme="dark">
+  <Section id="about" theme="light">
     About Me
   </Section>
 </template>

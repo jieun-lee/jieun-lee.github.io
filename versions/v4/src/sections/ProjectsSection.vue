@@ -1,5 +1,5 @@
 <template>
-  <Section id="projects" theme="dark">
+  <Section id="projects" theme="light">
     <div class="featured-projects">
       <FeaturedProject
         v-for="project in featuredProjects"

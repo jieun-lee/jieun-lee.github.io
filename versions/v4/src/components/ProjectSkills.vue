@@ -23,14 +23,14 @@ export default {
   flex-wrap: wrap;
 
   &__skill {
-    background-color: $color-green-300;
+    background-color: $color-button-green-bg;
     border-radius: $border-radius-default;
     padding: 4px 8px;
     margin-right: 2px;
     margin-bottom: 2px;
     font-size: 12px;
     font-weight: 400;
-    color: $color-green-700;
+    color: $color-button-green-text;
   }
 }
 </style>

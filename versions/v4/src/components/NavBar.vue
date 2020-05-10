@@ -1,47 +1,37 @@
 <template>
 <!-- Copied from V3 -->
   <div class="nav">
-    <a href="#about" class="nav__link">About Me</a>
-    <a href="#skills" class="nav__link">Skills</a>
-    <a href="#projects" class="nav__link">Projects</a>
-    <a href="#interests" class="nav__link">Interests</a>
-    <a href="#more" class="nav__link">More Info</a>
+    <a href="#" class="nav__link">TOP</a> ||
+    <a href="#about" class="nav__link">About</a> |
+    <a href="#skills" class="nav__link">Skills</a> |
+    <a href="#projects" class="nav__link">Projects</a> |
+    <a href="#interests" class="nav__link">Interests</a> |
+    <a href="#more" class="nav__link">More</a>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
-/* Copied from V3 */
 .nav {
-    display: flex;
-    width: 40%;
     position: fixed;
     z-index: 5;
     top: 0;
     right: 0;
-    padding: 0.5rem 1.25rem;
+    padding: 4px 12px;
     background-color: $color-grey-900;
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: $border-radius-default;
+    color: $color-grey-100;
+    font-size: 14px;
 }
 
 .nav__link {
     color: $color-grey-100;
-    margin: auto;
+    font-weight: 450;
+    margin: 0 8px;
     text-decoration: none;
 }
 
 .nav__link:hover {
-    font-weight: 500;
-    color: $color-yellow-400;
-}
-
-@media (max-width: 767px) {
-    /* write css code here - mobile */
-    .nav {
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        border-bottom-right-radius: 0.5rem;
-    }
+    color: $color-green-500;
 }
 </style>

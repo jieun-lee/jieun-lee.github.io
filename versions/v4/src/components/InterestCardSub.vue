@@ -36,20 +36,19 @@ $small-card-dims: 250px;
 $small-card-hover-dims: 255px;
 
 .interest-card-sub {
-  background-color: $color-yellow-100;
   border-radius: $border-radius-default;
   width: $small-card-dims;
   height: $small-card-dims;
   z-index: 1;
   position: absolute;
-  box-shadow: 2px 2px 8px 0 $shadow-lighter;
+  box-shadow: 2px 2px 8px 0 $shadow-green-700-25;
   overflow: hidden;
 
   &:hover {
     width: $small-card-hover-dims;
     height: $small-card-hover-dims;
     cursor: pointer;
-    box-shadow: 2px 2px 12px 0 $shadow-lighter;
+    box-shadow: 2px 2px 12px 0 $shadow-green-700-25;
   }
 
   &__image {
@@ -57,8 +56,8 @@ $small-card-hover-dims: 255px;
     height: 100%;
     object-fit: cover;
     border-radius: $border-radius-default;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5) blur(1px);
+    -webkit-filter: brightness(0.5) blur(1px);
     opacity: 75%;
   }
 }

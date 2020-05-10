@@ -1,5 +1,5 @@
 <template>
-  <Section id="interests" theme="light">
+  <Section id="interests" theme="dark">
     <div class="interests-wrapper">
       <InterestCardSub
         :name="this.interests[indexLeft]['name']"
