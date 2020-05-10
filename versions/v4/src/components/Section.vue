@@ -29,7 +29,7 @@ export default {
   padding: 24px 12px;
 
   &--dark {
-    background-color: $color-yellow-200;
+    background-color: $color-green-200;
   }
   &--light {
     background-color: $color-yellow-300;

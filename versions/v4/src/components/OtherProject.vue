@@ -29,7 +29,7 @@ export default {
 @import "@/scss/_variables.scss";
 
 .other-project {
-  background-color: $color-yellow-100;
+  background-color: $color-project-card;
   border-radius: $border-radius-default;
   padding: 12px;
   min-height: 200px;

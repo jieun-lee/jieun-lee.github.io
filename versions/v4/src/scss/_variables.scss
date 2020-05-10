@@ -21,18 +21,19 @@ $color-yellow-700: #7c4d0b;
 $color-yellow-800: #3d2404;
 $color-yellow-900: #1d1204;
 // Greens
-$color-green-100: #e5fcca;
-$color-green-200: #b7ec7a;
-$color-green-300: #96da46;
-$color-green-400: #7fc512;
-$color-green-500: #599907;
-$color-green-600: #4a7308;
+$color-green-100: #f9fff1;
+$color-green-200: #e9ffd0;
+$color-green-300: #aee86a;
+$color-green-400: #83cf2a;
+$color-green-500: #6cb002;
+$color-green-600: #548c0c;
 $color-green-700: #344d0b;
 $color-green-800: #1c2b04;
 $color-green-900: #0e1a04;
 
 // Designated Colours
-$color-project-shadow: $color-yellow-500;
+$color-project-shadow: $color-green-500;
+$color-project-card: $color-green-100;
 
 // Shadow Colours - need to change
 $shadow-lighter: #3a3f4140; // 25% opacity

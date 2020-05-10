@@ -32,7 +32,7 @@ export default {
 
 .featured-project {
   display: flex;
-  background-color: $color-yellow-100;
+  background-color: $color-project-card;
   margin-bottom: 16px;
   border-radius: $border-radius-default;
   box-shadow: 4px 4px 0 0 $color-project-shadow;
