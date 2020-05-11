@@ -2,7 +2,7 @@
   <div class="section" :class="'section--'+theme" :id=id>
     <div class="section__wrapper">
       <h2 class="section__title" v-if="!hideHeader">{{ title }}</h2>
-    <slot></slot>
+      <slot></slot>
     </div>
   </div>
 </template>

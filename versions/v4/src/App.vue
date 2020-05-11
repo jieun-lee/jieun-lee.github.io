@@ -7,6 +7,7 @@
     <ProjectsSection />
     <InterestsSection />
     <MoreSection />
+    <FooterSection />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import SkillsSection from "@/sections/SkillsSection.vue";
 import ProjectsSection from "@/sections/ProjectsSection.vue";
 import InterestsSection from "@/sections/InterestsSection.vue";
 import MoreSection from "@/sections/MoreSection.vue";
+import FooterSection from "@/sections/FooterSection.vue";
 export default {
   name: 'App',
   components: {
@@ -27,7 +29,8 @@ export default {
     SkillsSection,
     ProjectsSection,
     InterestsSection,
-    MoreSection
+    MoreSection,
+    FooterSection
   }
 }
 </script>

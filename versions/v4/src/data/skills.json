@@ -66,31 +66,32 @@
       ]
     },
     {
-      "name": "React Native",
-      "level": 65,
-      "categories": [
-        "Mobile"
-      ]
-    },
-    {
-      "name": "jQuery",
-      "level": 65,
-      "categories": [
-        "Web"
-      ]
-    },
-    {
       "name": "Git",
-      "level": 60,
+      "level": 65,
       "categories": [
         "Other"
       ]
     },
     {
       "name": "Photoshop",
-      "level": 60,
+      "level": 65,
       "categories": [
         "Other"
+      ]
+    },
+    {
+      "name": "React Native",
+      "level": 60,
+      "categories": [
+        "Featured",
+        "Mobile"
+      ]
+    },
+    {
+      "name": "jQuery",
+      "level": 60,
+      "categories": [
+        "Web"
       ]
     },
     {
