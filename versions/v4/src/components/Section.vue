@@ -1,7 +1,7 @@
 <template>
   <div class="section" :class="'section--'+theme" :id=id>
     <div class="section__wrapper">
-      <h2 class="section__title">{{ title }}</h2>
+      <h2 class="section__title" v-if="!hideHeader">{{ title }}</h2>
     <slot></slot>
     </div>
   </div>
@@ -12,6 +12,10 @@ export default {
   props: {
     id: String,
     theme: String,
+    hideHeader: {
+      type: Boolean,
+      deafult: false
+    }
   },
   computed: {
     title() {

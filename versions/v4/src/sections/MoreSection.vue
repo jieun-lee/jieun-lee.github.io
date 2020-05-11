@@ -1,6 +1,8 @@
 <template>
-  <Section id="more" theme="light">
-    More Info
+  <Section id="more" theme="light" :hideHeader="true">
+    Link to Github
+    Link to LinkedIn
+    Link to MyPortfolio
   </Section>
 </template>
 
