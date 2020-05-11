@@ -38,7 +38,7 @@ $mid-card-bg: $color-component-bg;
   border-radius: $border-radius-default;
   width: $mid-card-dims;
   height: $mid-card-dims;
-  box-shadow: 2px 2px 8px 0 $shadow-green-900-40;
+  box-shadow: 2px 2px 8px 0 $color-green-900-40;
   z-index: 2;
   overflow: hidden;
 

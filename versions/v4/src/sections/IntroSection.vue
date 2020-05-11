@@ -1,11 +1,45 @@
 <template>
   <div class="section intro" id="intro">
     <div class="intro__wrapper">
-      Intro Section
+      <div class="intro__nametag">
+        <div class="intro__nametag__name">Jieun Lee</div>
+        <div class="intro__nametag__description">Software Developer based in Vancouver, BC</div>
+      </div>
+      <div class="intro__links">
+        <a v-for="link in links" :key="link.name" :href="link.url" target="_blank">
+          <img class="intro__links__icon" :src="require(`@/assets/icons/icon-${link.imgsrc}`)" />
+        </a>
+      </div>
     </div>
     <img class="intro__background" src="@/assets/introbg.jpg" />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      links: [
+        {
+          name: "Github",
+          imgsrc: "github.png",
+          url: "https://github.com/jieun-lee"
+        },
+        {
+          name: "MyPortfolio",
+          imgsrc: "jieunlee.png",
+          url: "https://jieun-lee.myportfolio.com/"
+        },
+        {
+          name: "LinkedIn",
+          imgsrc: "linkedin.png",
+          url: "https://www.linkedin.com/in/jieun-leee"
+        }
+      ]
+    }
+  }
+}
+</script>>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
@@ -31,6 +65,39 @@
     z-index: 1;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+  }
+
+  &__nametag {
+    background-color: $color-grey-100-75;
+    text-align: center;
+    padding: 24px 64px;
+    margin: 12px;
+    border-radius: $border-radius-extra;
+
+    &__name {
+      font-size: 40px;
+      font-weight: 900;
+    }
+
+    &__description {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  &__links {
+    &__icon {
+      margin: 0 12px;
+      transform: scale(0.96);
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
   }
 }
 </style>

@@ -41,14 +41,14 @@ $small-card-hover-dims: 255px;
   height: $small-card-dims;
   z-index: 1;
   position: absolute;
-  box-shadow: 2px 2px 8px 0 $shadow-green-700-25;
+  box-shadow: 2px 2px 8px 0 $color-green-700-25;
   overflow: hidden;
 
   &:hover {
     width: $small-card-hover-dims;
     height: $small-card-hover-dims;
     cursor: pointer;
-    box-shadow: 2px 2px 12px 0 $shadow-green-700-25;
+    box-shadow: 2px 2px 12px 0 $color-green-700-25;
   }
 
   &__image {
