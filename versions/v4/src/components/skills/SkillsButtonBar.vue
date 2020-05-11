@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import SkillButton from "@/components/SkillButton.vue";
+import SkillButton from "@/components/skills/SkillButton.vue";
 import skillsData from "@/data/skills.json";
 export default {
   components: {

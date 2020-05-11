@@ -1,6 +1,6 @@
 <template>
   <div class="interest-card-mid">
-    <img class="interest-card-mid__image" :src="require(`../assets/interests/${this.name}.jpg`)" />
+    <img class="interest-card-mid__image" :src="require(`@/assets/interests/${this.name}.jpg`)" />
     <div class="interest-card-mid__details">
       <div class="interest-card-mid__details__text">
         <h3 class="interest-card-mid__details__text__name">{{ name }}</h3>
@@ -31,7 +31,7 @@ export default {
 
 $mid-card-dims: 350px;
 $mid-card-margins: 0px 16px;
-$mid-card-bg: $color-grey-100;
+$mid-card-bg: $color-component-bg;
 
 .interest-card-mid {
   background-color: $mid-card-bg;

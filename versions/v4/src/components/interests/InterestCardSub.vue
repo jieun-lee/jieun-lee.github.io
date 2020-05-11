@@ -4,7 +4,7 @@
     :style="{ transform: this.transformValue }"
     @click="onClick"
   >
-    <img class="interest-card-sub__image" :src="require(`../assets/interests/${this.name}.jpg`)" />
+    <img class="interest-card-sub__image" :src="require(`@/assets/interests/${this.name}.jpg`)" />
   </div>
 </template>
 

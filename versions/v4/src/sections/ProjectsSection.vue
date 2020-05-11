@@ -26,8 +26,8 @@
 
 <script>
 import Section from "@/components/Section.vue";
-import FeaturedProject from "@/components/FeaturedProject.vue";
-import OtherProject from "@/components/OtherProject.vue";
+import FeaturedProject from "@/components/projects/FeaturedProject.vue";
+import OtherProject from "@/components/projects/OtherProject.vue";
 import projectsData from "@/data/projects.json";
 export default {
   components: {

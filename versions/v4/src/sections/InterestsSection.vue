@@ -22,8 +22,8 @@
 
 <script>
 import Section from "@/components/Section.vue";
-import InterestCardSub from "@/components/InterestCardSub.vue";
-import InterestCardMid from "@/components/InterestCardMid.vue";
+import InterestCardSub from "@/components/interests/InterestCardSub.vue";
+import InterestCardMid from "@/components/interests/InterestCardMid.vue";
 import interestsData from "@/data/interests.json";
 export default {
   components: {

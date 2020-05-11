@@ -13,8 +13,8 @@
 
 <script>
 import Section from "@/components/Section.vue";
-import SkillsButtonBar from "@/components/SkillsButtonBar.vue";
-import SkillItem from "@/components/SkillItem.vue";
+import SkillsButtonBar from "@/components/skills/SkillsButtonBar.vue";
+import SkillItem from "@/components/skills/SkillItem.vue";
 import skillsData from "@/data/skills.json";
 export default {
   components: {

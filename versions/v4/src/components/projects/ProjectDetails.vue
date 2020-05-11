@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import ProjectSkills from "@/components/ProjectSkills.vue";
-import ProjectLinks from "@/components/ProjectLinks.vue";
+import ProjectSkills from "./ProjectSkills.vue";
+import ProjectLinks from "./ProjectLinks.vue";
 export default {
   components: {
     ProjectSkills,

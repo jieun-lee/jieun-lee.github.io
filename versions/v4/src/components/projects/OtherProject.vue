@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ProjectDetails from "@/components/ProjectDetails.vue";
+import ProjectDetails from "./ProjectDetails.vue";
 export default {
   components: {
     ProjectDetails
@@ -29,7 +29,7 @@ export default {
 @import "@/scss/_variables.scss";
 
 .other-project {
-  background-color: $color-project-card;
+  background-color: $color-component-bg;
   border-radius: $border-radius-default;
   padding: 12px;
   min-height: 200px;

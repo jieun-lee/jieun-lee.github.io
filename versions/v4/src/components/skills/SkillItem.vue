@@ -42,7 +42,7 @@ export default {
   }
 
   &__bar {
-    background-color: $color-green-100;
+    background-color: $color-component-bg;
     border-radius: $border-radius-default;
     height: 24px;
     width: 100%;

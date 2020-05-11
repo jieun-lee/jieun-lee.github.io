@@ -1,6 +1,6 @@
 <template>
   <div class="featured-project">
-    <img class="featured-project__image" :src="require(`../assets/projects/${this.imgsrc}.jpg`)" />
+    <img class="featured-project__image" :src="require(`../../assets/projects/${this.imgsrc}.jpg`)" />
     <ProjectDetails
       :name="this.name"
       :skills="this.skills"
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ProjectDetails from "@/components/ProjectDetails.vue";
+import ProjectDetails from "./ProjectDetails.vue";
 export default {
   components: {
     ProjectDetails
@@ -32,7 +32,7 @@ export default {
 
 .featured-project {
   display: flex;
-  background-color: $color-project-card;
+  background-color: $color-component-bg;
   margin-bottom: 16px;
   border-radius: $border-radius-default;
   box-shadow: 4px 4px 0 0 $color-project-shadow;

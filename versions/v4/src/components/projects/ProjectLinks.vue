@@ -44,7 +44,7 @@ export default {
     padding: 4px 10px;
     text-align: center;
     text-decoration: none;
-    color: $color-green-100;
+    color: $color-component-bg;
     font-weight: 600;
     margin-left: 4px;
   }
