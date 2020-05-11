@@ -1,20 +1,62 @@
 <template>
   <Section id="more" theme="light" :hideHeader="true">
-    Link to Github
-    Link to LinkedIn
-    Link to MyPortfolio
+    <h2 class="more-section__header">External Links</h2>
+    <div class="more-section__links">
+      <a v-for="link in links"
+        :key="link.name"
+        :href="link.url"
+        target="_blank"
+        class="more-section__links__button"
+      >
+        {{ link.name }}
+      </a>
+    </div>
   </Section>
 </template>
 
 <script>
 import Section from "@/components/Section.vue";
+import linkData from "@/data/links.json";
 export default {
   components: {
     Section
+  },
+  data() {
+    return {
+      links: linkData.links
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
+
+.more-section {
+  &__header {
+    @include section-title;
+    text-transform: uppercase;
+  }
+
+  &__links {
+    display: flex;
+    place-content: center;
+
+    &__button {
+      background-color: $color-button-green-bg;
+      color: $color-button-green-text;
+      text-decoration: none;
+      border-radius: $border-radius-default;
+      padding: 8px 20px;
+      margin: 0 8px;
+      font-size: 18px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: $color-button-green-hover;
+      }
+    }
+  }
+}
 </style>

@@ -33,7 +33,7 @@ export default {
 .featured-project {
   display: flex;
   background-color: $color-component-bg;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   border-radius: $border-radius-default;
   box-shadow: 4px 4px 0 0 $color-project-shadow;
 

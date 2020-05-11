@@ -83,6 +83,10 @@ $mid-card-bg: $color-component-bg;
       align-self: flex-end;
       text-decoration: none;
       color: $color-button-green-text;
+
+      &:hover {
+        background-color: $color-button-green-hover;
+      }
     }
   }
 }

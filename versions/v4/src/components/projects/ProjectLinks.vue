@@ -47,6 +47,10 @@ export default {
     color: $color-component-bg;
     font-weight: 600;
     margin-left: 4px;
+
+    &:hover {
+      background-color: $color-green-500;
+    }
   }
 }
 </style>

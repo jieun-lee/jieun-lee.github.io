@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
 
 .section {
   padding: 24px 12px 48px;
@@ -45,11 +46,7 @@ export default {
   }
 
   &__title {
-  color: $color-grey-900;
-  letter-spacing: 5px;
-  text-align: center;
-  margin-top: 4px;
-  margin-bottom: 24px;
+    @include section-title;
   }
 }
 </style>
