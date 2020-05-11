@@ -1,0 +1,19 @@
+{
+  "links": [
+    {
+      "name": "Github",
+      "imgsrc": "github.png",
+      "url": "https://github.com/jieun-lee"
+    },
+    {
+      "name": "MyPortfolio",
+      "imgsrc": "jieunlee.png",
+      "url": "https://jieun-lee.myportfolio.com/"
+    },
+    {
+      "name": "LinkedIn",
+      "imgsrc": "linkedin.png",
+      "url": "https://www.linkedin.com/in/jieun-leee"
+    }
+  ]
+}

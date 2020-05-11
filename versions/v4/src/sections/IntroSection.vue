@@ -16,26 +16,11 @@
 </template>
 
 <script>
+import linkData from "@/data/links.json";
 export default {
   data() {
     return {
-      links: [
-        {
-          name: "Github",
-          imgsrc: "github.png",
-          url: "https://github.com/jieun-lee"
-        },
-        {
-          name: "MyPortfolio",
-          imgsrc: "jieunlee.png",
-          url: "https://jieun-lee.myportfolio.com/"
-        },
-        {
-          name: "LinkedIn",
-          imgsrc: "linkedin.png",
-          url: "https://www.linkedin.com/in/jieun-leee"
-        }
-      ]
+      links: linkData.links
     }
   }
 }
@@ -47,7 +32,7 @@ export default {
   height: 500px;
   position: relative;
   overflow: hidden;
-  background-color: $color-green-300; // when img doesn't load
+  background-color: $color-green-700; // when img doesn't load
   border-bottom: 8px solid $color-green-700;
 
   &__background {
