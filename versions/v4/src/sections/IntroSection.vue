@@ -29,15 +29,22 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
+@import "@/scss/_mediaquery.scss";
 
 $intro-section-height: 500px;
+$intro-section-height-sm: 350px;
 $intro-section-border: 8px solid $color-green-700;
+
 .intro {
-  height: $intro-section-height;
+  height: $intro-section-height-sm;
   position: relative;
   overflow: hidden;
   background-color: $color-green-700; // when img doesn't load
   border-bottom: $intro-section-border;
+
+  @include tablet-and-larger {
+    height: $intro-section-height;
+  }
 
   &__background {
     @include cover-with-image;
@@ -61,9 +68,13 @@ $intro-section-border: 8px solid $color-green-700;
   &__nametag {
     background-color: $color-grey-100-75;
     text-align: center;
-    padding: $spacing-section-xsmall $spacing-section-large;
-    margin: $spacing-default;
+    padding: $spacing-section-small;
+    margin: 0 $spacing-large $spacing-default;
     border-radius: $border-radius-extra;
+
+    @include phablet-and-larger {
+      padding: $spacing-section-xsmall $spacing-section-large;
+    }
 
     &__name {
       font-size: $font-size-header-large;
