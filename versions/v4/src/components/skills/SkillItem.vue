@@ -29,38 +29,63 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mediaquery.scss";
 
 $skill-label-width: 120px;
-$skill-bar-height: 24px;
+$skill-bar-height-small: 24px;
+$skill-bar-height: 26px;
 
 .skill {
   display: flex;
-  margin: $spacing-large;
+  margin: $spacing-default;
+
+  @include tablet-and-larger {
+    margin: $spacing-large;
+  }
 
   &__label {
     font-weight: 600;
     width: $skill-label-width;
     text-align: right;
     margin-right: $spacing-default;
+    font-size: $font-size-small;
+    align-self: center;
+
+    @include small-phone {
+      font-size: $font-size-xsmall;
+    }
+
+    @include tablet-and-larger {
+      font-size: $font-size-default;
+    }
   }
 
   &__bar {
     background-color: $color-component-bg;
     border-radius: $border-radius-default;
-    height: $skill-bar-height;
+    height: $skill-bar-height-small;
     width: 100%;
 
+    @include phablet-and-larger {
+      height: $skill-bar-height;
+    }
+
     &__value {
-      float: right;
+      float: left;
       height: 100%;
       display: flex;
       align-items: center;
-      padding-right: $spacing-xsmall;
+      padding: 0 $spacing-small;
       font-size: $font-size-small;
-      color: $color-grey-300;
+      color: $color-grey-100;
 
       &__percent {
         font-size: $font-size-xsmall;
+      }
+
+      @include phablet-and-larger {
+        float: right;
+        color: $color-grey-300;
       }
     }
 

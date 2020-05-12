@@ -24,9 +24,16 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
+@import "@/scss/_mediaquery.scss";
+
 .skills-button {
   margin: $spacing-xsmall;
   padding: $spacing-xsmall $spacing-default;
+  font-size: $font-size-small;
+
+  @include tablet-and-larger {
+    font-size: $font-size-default;
+  }
 
   &:not(&--selected) {
     @include button-dark;

@@ -36,12 +36,18 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mediaquery.scss";
 
 .skills-button-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: -$spacing-default;
-    margin-bottom: $spacing-section-small;
+    flex-wrap: wrap;
+    margin: -$spacing-default auto $spacing-section-small;
+    width: 75%;
+
+    @include phablet-and-larger {
+      width: 100%;
+    }    
   }
 </style>
