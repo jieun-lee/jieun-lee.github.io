@@ -28,17 +28,19 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
+
+$intro-section-height: 500px;
+$intro-section-border: 8px solid $color-green-700;
 .intro {
-  height: 500px;
+  height: $intro-section-height;
   position: relative;
   overflow: hidden;
   background-color: $color-green-700; // when img doesn't load
-  border-bottom: 8px solid $color-green-700;
+  border-bottom: $intro-section-border;
 
   &__background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    @include cover-with-image;
     object-position: left;
     position: absolute;
     top: 0;
@@ -59,8 +61,8 @@ export default {
   &__nametag {
     background-color: $color-grey-100-75;
     text-align: center;
-    padding: 24px 64px;
-    margin: 12px;
+    padding: $spacing-section-small $spacing-section-large;
+    margin: $spacing-default;
     border-radius: $border-radius-extra;
 
     &__name {
@@ -76,7 +78,7 @@ export default {
 
   &__links {
     &__icon {
-      margin: 0 12px;
+      margin: 0 $spacing-default;
       transform: scale(0.96);
 
       &:hover {

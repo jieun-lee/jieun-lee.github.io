@@ -29,8 +29,10 @@ export default {
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
 
+$content-area-width: 768px;
+
 .section {
-  padding: 24px 12px 48px;
+  padding: $spacing-section-small $spacing-default $spacing-section-default;
 
   &--dark {
     background-color: $color-green-300;
@@ -41,7 +43,7 @@ export default {
 
   &__wrapper {
     width: 100%;
-    max-width: 768px;
+    max-width: $content-area-width;;
     margin: auto;
   }
 

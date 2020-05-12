@@ -2,8 +2,8 @@
   color: $color-grey-900;
   letter-spacing: 5px;
   text-align: center;
-  margin-top: 4px;
-  margin-bottom: 24px;
+  margin-top: $spacing-xsmall;
+  margin-bottom: $spacing-section-small;
   font-size: $font-size-header-small;
 }
 
@@ -27,4 +27,16 @@
     background-color: $color-green-600;
     cursor: pointer;
   }
+}
+
+@mixin general-project-card {
+  background-color: $color-component-bg;
+  border-radius: $border-radius-default;
+  box-shadow: 4px 4px 0 0 $color-green-500;
+}
+
+@mixin cover-with-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

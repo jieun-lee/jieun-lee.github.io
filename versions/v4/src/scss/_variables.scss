@@ -1,5 +1,4 @@
 // COLOURS
-
 // Greys
 $color-grey-100: #fbfbfb;
 $color-grey-200: #e3e7de;
@@ -20,43 +19,35 @@ $color-green-600: #498700;
 $color-green-700: #344d0b;
 $color-green-800: #1c2b04;
 $color-green-900: #0e1a04;
-
 // Designated Colours
-$color-project-shadow: $color-green-500;
 $color-component-bg: $color-green-100;
-
 // Colours with Opacity
 $color-green-700-25: #344d0b40;
 $color-green-900-40: #0e1a0466;
 $color-grey-100-75: #fbfbfbbf;
 
-
-
-// SIZES
-
-// Font Sizes
+// FONT SIZES
+// Standard Sizes
 $font-size-xsmall: 12px;
 $font-size-small: 14px;
 $font-size-default: 16px;
 $font-size-large: 18px;
+// Header Sizes
 $font-size-header-small: 24px;
 $font-size-header-default: 28px;
 $font-size-header-large: 36px;
 
-// // Spacing Size
-// $spacing-xsmall: 4px;
-// $spacing-small: 8px;
-// $spacing-medium: 12px;
-// $spacing-large: 16px;
-// $spacing-xlarge: 24px;
-// $spacing-xxlarge: 32px;
-// $spacing-xxxlarge: 48px;
-// $spacing-xxxxlarge: 64px;
+// SPACING SIZES
+// Standard Sizes
+$spacing-xsmall: 4px;
+$spacing-small: 8px;
+$spacing-default: 12px;
+$spacing-large: 16px;
+// Section Sizes
+$spacing-section-small: 24px;
+$spacing-section-default: 48px;
+$spacing-section-large: 64px;
 
-
-
-
-
-// OTHER
+// BORDER RADIUS
 $border-radius-default: 8px;
 $border-radius-extra: 36px;

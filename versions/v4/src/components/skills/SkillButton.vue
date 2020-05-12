@@ -25,8 +25,8 @@ export default {
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
 .skills-button {
-  margin: 4px;
-  padding: 4px 12px;
+  margin: $spacing-xsmall;
+  padding: $spacing-xsmall $spacing-default;
 
   &:not(&--selected) {
     @include button-dark;

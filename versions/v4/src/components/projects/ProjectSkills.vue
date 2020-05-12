@@ -19,15 +19,15 @@ export default {
 @import "@/scss/_mixins.scss";
 
 .project-skills {
-  margin-top: 8px;
+  margin-top: $spacing-small;
   display: flex;
   flex-wrap: wrap;
 
   &__skill {
     @include button-light(false);
-    padding: 4px 8px;
-    margin-right: 2px;
-    margin-bottom: 2px;
+    padding: $spacing-xsmall $spacing-small;
+    margin-right: $spacing-xsmall;
+    margin-bottom: $spacing-xsmall;
     font-size: $font-size-xsmall;
     font-weight: 400;
   }

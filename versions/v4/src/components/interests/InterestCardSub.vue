@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      transformValue: (this.position === "left") ? "translateX(-200px)" : "translateX(200px)"
+      transformAmount: "200px"
     }
   },
   methods: {
@@ -26,14 +26,27 @@ export default {
       }
     }
   },
+  computed: {
+    transformValue() {
+      if (this.position === "left") {
+        return "translateX(-" + this.transformAmount + ")";
+      } else {
+        return "translateX(" + this.transformAmount + ")";
+      }
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
 
 $small-card-dims: 250px;
 $small-card-hover-dims: 255px;
+$small-card-shadow: 2px 2px 8px 0 $color-green-700-25;
+$small-card-shadow-hover: 2px 2px 12px 0 $color-green-700-25;
+$small-card-img-filter: brightness(0.5) blur(1px);
 
 .interest-card-sub {
   border-radius: $border-radius-default;
@@ -41,23 +54,21 @@ $small-card-hover-dims: 255px;
   height: $small-card-dims;
   z-index: 1;
   position: absolute;
-  box-shadow: 2px 2px 8px 0 $color-green-700-25;
+  box-shadow: $small-card-shadow;
   overflow: hidden;
 
   &:hover {
     width: $small-card-hover-dims;
     height: $small-card-hover-dims;
+    box-shadow: $small-card-shadow-hover;
     cursor: pointer;
-    box-shadow: 2px 2px 12px 0 $color-green-700-25;
   }
 
   &__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    @include cover-with-image;
     border-radius: $border-radius-default;
-    filter: brightness(0.5) blur(1px);
-    -webkit-filter: brightness(0.5) blur(1px);
+    filter: $small-card-img-filter;
+    -webkit-filter: $small-card-img-filter;
     opacity: 75%;
   }
 }

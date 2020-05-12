@@ -35,11 +35,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/scss/_variables.scss";
+
 .skills-button-bar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: -12px;
-    margin-bottom: 24px;
+    margin-top: -$spacing-default;
+    margin-bottom: $spacing-section-small;
   }
 </style>

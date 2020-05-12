@@ -30,27 +30,32 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 
+$skill-label-width: 120px;
+$skill-bar-height: 24px;
+
 .skill {
   display: flex;
-  margin: 16px;
+  margin: $spacing-large;
 
   &__label {
     font-weight: 600;
-    width: 120px;
+    width: $skill-label-width;
     text-align: right;
-    margin-right: 12px;
+    margin-right: $spacing-default;
   }
 
   &__bar {
     background-color: $color-component-bg;
     border-radius: $border-radius-default;
-    height: 24px;
+    height: $skill-bar-height;
     width: 100%;
 
     &__value {
       float: right;
       height: 100%;
-      padding: 2.5px 6px;
+      display: flex;
+      align-items: center;
+      padding-right: $spacing-xsmall;
       font-size: $font-size-small;
       color: $color-grey-300;
 

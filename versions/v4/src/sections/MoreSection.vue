@@ -47,8 +47,8 @@ export default {
       @include button-dark;
       border-radius: $border-radius-default * 1.5; // make rounder
       text-decoration: none;
-      padding: 8px 20px;
-      margin: 0 8px;
+      padding: $spacing-small $spacing-section-small;
+      margin: 0 $spacing-small;
       font-size: $font-size-large;
       font-weight: 500;
     }

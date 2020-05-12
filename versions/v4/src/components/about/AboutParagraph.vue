@@ -20,19 +20,18 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 
-$text-padding: 14px;
 $paragraph-width: 75%;
 
 .about-paragraph {
-  margin: 45px 0;
+  margin: $spacing-section-default 0;
   width: $paragraph-width;
 
   &:first-child {
-    margin-top: 12px;
+    margin-top: $spacing-default;
   }
 
   &:last-child {
-    margin-bottom: 12px;
+    margin-bottom: $spacing-default;
   }
 
   &--right {
@@ -44,21 +43,21 @@ $paragraph-width: 75%;
     font-size: $font-size-header-default;
     font-weight: 700;
     letter-spacing: -1px;
-    padding: 0 $text-padding;
+    padding: 0 $spacing-default;
     color: $color-green-900;
 
     &--bottom {
-      margin-top: -8px;
+      margin-top: -$spacing-small;
       color: $color-green-700;
     }
   }
 
   &__paragraph {
-    margin-top: 4px;
+    margin-top: $spacing-xsmall;
     text-align: left;
     background-color: $color-green-300;
     border-radius: $border-radius-default;
-    padding: $text-padding*0.75 $text-padding;
+    padding: $spacing-small $spacing-default;
     color: $color-green-900;
   }
 }

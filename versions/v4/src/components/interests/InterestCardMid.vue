@@ -31,15 +31,18 @@ export default {
 @import "@/scss/_mixins.scss";
 
 $mid-card-dims: 350px;
-$mid-card-margins: 0px 16px;
+$mid-card-margins: 0 $spacing-large;
 $mid-card-bg: $color-component-bg;
+$mid-card-text-min-height: 80px;
+$mid-card-shadow: 2px 2px 8px 0 $color-green-900-40;
+$mid-card-image-blur: 0px -16px 50px 50px $mid-card-bg;
 
 .interest-card-mid {
   background-color: $mid-card-bg;
   border-radius: $border-radius-default;
   width: $mid-card-dims;
   height: $mid-card-dims;
-  box-shadow: 2px 2px 8px 0 $color-green-900-40;
+  box-shadow: $mid-card-shadow;
   z-index: 2;
   overflow: hidden;
 
@@ -58,9 +61,9 @@ $mid-card-bg: $color-component-bg;
     place-content: flex-end;
 
     &__text {
-      min-height: 80px;
+      min-height: $mid-card-text-min-height;
       background-color: $mid-card-bg;
-      box-shadow: 0px -16px 50px 50px $mid-card-bg;
+      box-shadow: $mid-card-image-blur;
 
       &__name {
         text-transform: uppercase;
@@ -77,9 +80,9 @@ $mid-card-bg: $color-component-bg;
 
     &__link {
       @include button-light;
-      padding: 4px 12px;
-      margin-right: 16px;
-      margin-bottom: 16px;
+      padding: $spacing-xsmall $spacing-default;
+      margin-right: $spacing-large;
+      margin-bottom: $spacing-large;
       align-self: flex-end;
       text-decoration: none;
     }

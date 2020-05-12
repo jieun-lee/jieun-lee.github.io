@@ -41,13 +41,13 @@ export default {
   &__icon {
     // later to be replaced with icons
     background-color: $color-green-500;
-    border-radius: 100px;
-    padding: 4px 10px;
+    border-radius: $border-radius-extra;
+    padding: $spacing-xsmall $spacing-xsmall*2.5;
     text-align: center;
     text-decoration: none;
     color: $color-component-bg;
     font-weight: 600;
-    margin-left: 4px;
+    margin-left: $spacing-xsmall;
 
     &:hover {
       background-color: $color-green-500;

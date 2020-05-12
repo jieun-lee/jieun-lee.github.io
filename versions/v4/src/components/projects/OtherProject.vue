@@ -27,18 +27,19 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
+
+$other-project-min-height: 200px;
 
 .other-project {
-  background-color: $color-component-bg;
-  border-radius: $border-radius-default;
-  padding: 12px;
-  min-height: 200px;
+  @include general-project-card;
+  padding: $spacing-default;
+  min-height: $other-project-min-height;
   flex: 1 1 0;
   justify-content: space-between;
-  box-shadow: 4px 4px 0 0 $color-project-shadow;
 
   &:not(:last-child) {
-    margin-right: 16px;
+    margin-right: $spacing-large;
   }
 }
 </style>

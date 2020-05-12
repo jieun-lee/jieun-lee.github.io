@@ -47,11 +47,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 
-.featured-projects {
-  display: flex;
-  flex-direction: column;
-}
-
 .other-projects {
   display: flex;
 }

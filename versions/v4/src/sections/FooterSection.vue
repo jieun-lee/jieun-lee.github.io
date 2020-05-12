@@ -24,7 +24,7 @@ export default {
 
 #footer {
   background-color: $color-grey-600;
-  padding-bottom: 30px;
+  padding-bottom: $spacing-section-small;
 }
 
 .footer__content {
@@ -33,7 +33,7 @@ export default {
   font-size: $font-size-default;
 
   &__sub {
-    margin-top: 12px;
+    margin-top: $spacing-default;
     color: $color-grey-300;
     font-size: $font-size-small;
   }

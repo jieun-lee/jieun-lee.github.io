@@ -17,7 +17,7 @@
     z-index: 5;
     top: 0;
     right: 0;
-    padding: 4px 12px;
+    padding: $spacing-xsmall $spacing-default;
     background-color: $color-grey-900;
     border-bottom-left-radius: $border-radius-default;
     color: $color-grey-100;
@@ -27,7 +27,7 @@
 .nav__link {
     color: $color-grey-100;
     font-weight: 450;
-    margin: 0 8px;
+    margin: 0 $spacing-small;
     text-decoration: none;
 }
 

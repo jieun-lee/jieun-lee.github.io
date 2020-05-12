@@ -29,10 +29,10 @@ export default {
 @import "@/scss/_variables.scss";
 
 .project-details {
-  padding: 8px 12px;
+  padding: $spacing-small $spacing-default;
 
   &--featured {
-    padding: 16px;
+    padding: $spacing-large;
     width: 100%;
   }
 

@@ -29,19 +29,21 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
+
+$featured-project-img-width: 250px;
+$featured-project-img-border: 2px solid $color-grey-100;
 
 .featured-project {
+  @include general-project-card;
   display: flex;
-  background-color: $color-component-bg;
-  margin-bottom: 20px;
-  border-radius: $border-radius-default;
-  box-shadow: 4px 4px 0 0 $color-project-shadow;
+  margin-bottom: $spacing-section-small;
 
   &__image {
-    max-width: 250px;
+    width: $featured-project-img-width;
     border-top-left-radius: $border-radius-default;
     border-bottom-left-radius: $border-radius-default;
-    border-right: 2px solid $color-grey-100;
+    border-right: $featured-project-img-border;
   }
 }
 </style>
