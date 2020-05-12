@@ -29,10 +29,10 @@
   }
 }
 
-@mixin general-project-card {
+@mixin general-project-card() {
   background-color: $color-component-bg;
   border-radius: $border-radius-default;
-  box-shadow: 4px 4px 0 0 $color-green-500;
+  box-shadow: 0 0 0 3px $color-green-500;
 }
 
 @mixin cover-with-image {

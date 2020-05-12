@@ -30,20 +30,42 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
+@import "@/scss/_mediaquery.scss";
 
-$featured-project-img-width: 250px;
-$featured-project-img-border: 2px solid $color-grey-100;
+$featured-project-img-max-width: 475px;
+$featured-project-img-height: 170px;
+$featured-project-img-border: 2px solid $color-green-500;
 
 .featured-project {
   @include general-project-card;
   display: flex;
-  margin-bottom: $spacing-section-small;
+  flex-direction: column;
+  margin-bottom: $project-card-spacing;
+
+  @include phablet-and-larger {
+    flex-direction: row;
+  }
 
   &__image {
-    width: $featured-project-img-width;
-    border-top-left-radius: $border-radius-default;
-    border-bottom-left-radius: $border-radius-default;
-    border-right: $featured-project-img-border;
+    width: 92.5%;
+    max-width: $featured-project-img-max-width;
+    margin: 3.5vw auto 0;
+    border: $featured-project-img-border;
+
+    @include phablet-and-larger {
+      width: auto;
+      min-width: unset;
+      height: $featured-project-img-height;
+      margin: 0;
+      border: none; // reset border
+      border-top-left-radius: $border-radius-default;
+      border-bottom-left-radius: $border-radius-default;
+      border-right: $featured-project-img-border;
+    }
+
+    @include small-phone {
+      display: none;
+    }
   }
 }
 </style>

@@ -20,6 +20,7 @@ export default {
 
 .project-skills {
   margin-top: $spacing-small;
+  margin-bottom: $spacing-xsmall;
   display: flex;
   flex-wrap: wrap;
 

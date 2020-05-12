@@ -46,8 +46,11 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mediaquery.scss";
 
 .other-projects {
-  display: flex;
+  @include phablet-and-larger {
+    display: flex;
+  }
 }
 </style>

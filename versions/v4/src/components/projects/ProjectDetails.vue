@@ -27,21 +27,41 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mediaquery.scss";
+
+$other-project-min-height: 200px;
 
 .project-details {
+  display: flex;
+  flex-direction: column;
 
   &--featured {
     padding: $spacing-large;
+  }
+
+  @include phablet-and-larger {
     width: 100%;
+
+    &:not(&--featured) {
+      height: 100%;
+    }
   }
 
   &__name {
     font-weight: 600;
     font-size: $font-size-large;
+
+    @include phablet {
+      font-size: $font-size-default;
+    }
   }
 
   &__description {
     font-size: $font-size-small;
+
+    @include phablet {
+      font-size: $font-size-xsmall;
+    }
   }
 }
 </style>

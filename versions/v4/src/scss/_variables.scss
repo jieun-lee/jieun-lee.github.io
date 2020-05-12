@@ -19,8 +19,6 @@ $color-green-600: #498700;
 $color-green-700: #344d0b;
 $color-green-800: #1c2b04;
 $color-green-900: #0e1a04;
-// Designated Colours
-$color-component-bg: $color-green-100;
 // Colours with Opacity
 $color-green-700-25: #344d0b40;
 $color-green-900-40: #0e1a0466;
@@ -59,3 +57,7 @@ $phablet-width: 600px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $large-width: 1200px;
+
+// DESIGNATED VALUES
+$color-component-bg: $color-green-100;
+$project-card-spacing: $spacing-section-small;

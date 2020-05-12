@@ -28,18 +28,21 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
-
-$other-project-min-height: 200px;
+@import "@/scss/_mediaquery.scss";
 
 .other-project {
   @include general-project-card;
-  padding: $spacing-default;
-  min-height: $other-project-min-height;
+  padding: $spacing-large;
   flex: 1 1 0;
   justify-content: space-between;
+  margin-bottom: $project-card-spacing;
 
-  &:not(:last-child) {
-    margin-right: $spacing-large;
+  @include phablet-and-larger {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: $project-card-spacing;
+    }
   }
 }
 </style>

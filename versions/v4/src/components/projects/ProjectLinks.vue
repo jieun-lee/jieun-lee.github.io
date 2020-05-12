@@ -37,6 +37,7 @@ export default {
 .project-links {
   display: flex;
   place-content: flex-end;
+  margin-top: auto;
 
   &__icon {
     // later to be replaced with icons
