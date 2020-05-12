@@ -49,7 +49,7 @@ export default {
       text-decoration: none;
       padding: 8px 20px;
       margin: 0 8px;
-      font-size: 18px;
+      font-size: $font-size-large;
       font-weight: 500;
     }
   }

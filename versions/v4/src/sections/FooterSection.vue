@@ -30,12 +30,12 @@ export default {
 .footer__content {
   text-align: center;
   color: $color-grey-200;
-  font-size: 16px;
+  font-size: $font-size-default;
 
   &__sub {
     margin-top: 12px;
     color: $color-grey-300;
-    font-size: 14px;
+    font-size: $font-size-small;
   }
 }
 </style>

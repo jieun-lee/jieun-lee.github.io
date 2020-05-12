@@ -41,7 +41,7 @@ $paragraph-width: 75%;
   }
 
   &__header {
-    font-size: 28px;
+    font-size: $font-size-header-default;
     font-weight: 700;
     letter-spacing: -1px;
     padding: 0 $text-padding;

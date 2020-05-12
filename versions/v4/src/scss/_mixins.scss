@@ -4,6 +4,7 @@
   text-align: center;
   margin-top: 4px;
   margin-bottom: 24px;
+  font-size: $font-size-header-small;
 }
 
 @mixin button-light($hover: true) {

@@ -65,13 +65,13 @@ $mid-card-bg: $color-component-bg;
       &__name {
         text-transform: uppercase;
         margin: $mid-card-margins;
-        font-size: 18px;
+        font-size: $font-size-large;
         letter-spacing: 2px;
       }
 
       &__description {
         margin: $mid-card-margins;
-        font-size: 14px;
+        font-size: $font-size-small;
       }
     }
 

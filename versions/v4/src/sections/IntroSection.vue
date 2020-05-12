@@ -64,12 +64,12 @@ export default {
     border-radius: $border-radius-extra;
 
     &__name {
-      font-size: 40px;
+      font-size: $font-size-header-large;
       font-weight: 900;
     }
 
     &__description {
-      font-size: 18px;
+      font-size: $font-size-large;
       font-weight: 500;
     }
   }

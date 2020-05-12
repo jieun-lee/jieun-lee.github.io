@@ -28,7 +28,7 @@ export default {
     padding: 4px 8px;
     margin-right: 2px;
     margin-bottom: 2px;
-    font-size: 12px;
+    font-size: $font-size-xsmall;
     font-weight: 400;
   }
 }

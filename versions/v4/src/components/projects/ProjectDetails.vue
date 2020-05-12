@@ -38,11 +38,11 @@ export default {
 
   &__name {
     font-weight: 600;
-    font-size: 18px;
+    font-size: $font-size-large;
   }
 
   &__description {
-    font-size: 14px;
+    font-size: $font-size-small;
   }
 }
 </style>

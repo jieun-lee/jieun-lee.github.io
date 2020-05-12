@@ -51,11 +51,11 @@ export default {
       float: right;
       height: 100%;
       padding: 2.5px 6px;
-      font-size: 14px;
+      font-size: $font-size-small;
       color: $color-grey-300;
 
       &__percent {
-        font-size:12px;
+        font-size: $font-size-xsmall;
       }
     }
 

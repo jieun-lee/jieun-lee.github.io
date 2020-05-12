@@ -21,7 +21,7 @@
     background-color: $color-grey-900;
     border-bottom-left-radius: $border-radius-default;
     color: $color-grey-100;
-    font-size: 14px;
+    font-size: $font-size-small;
 }
 
 .nav__link {
