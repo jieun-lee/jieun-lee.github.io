@@ -28,6 +28,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
 
 $mid-card-dims: 350px;
 $mid-card-margins: 0px 16px;
@@ -75,18 +76,12 @@ $mid-card-bg: $color-component-bg;
     }
 
     &__link {
-      background-color: $color-button-green-bg;
+      @include button-light;
       padding: 4px 12px;
-      border-radius: $border-radius-default;
       margin-right: 16px;
       margin-bottom: 16px;
       align-self: flex-end;
       text-decoration: none;
-      color: $color-button-green-text;
-
-      &:hover {
-        background-color: $color-button-green-hover;
-      }
     }
   }
 }

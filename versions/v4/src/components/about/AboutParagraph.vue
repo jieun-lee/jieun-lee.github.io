@@ -59,6 +59,7 @@ $paragraph-width: 75%;
     background-color: $color-green-300;
     border-radius: $border-radius-default;
     padding: $text-padding*0.75 $text-padding;
+    color: $color-green-900;
   }
 }
 </style>

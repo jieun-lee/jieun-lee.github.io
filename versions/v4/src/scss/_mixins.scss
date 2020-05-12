@@ -5,3 +5,25 @@
   margin-top: 4px;
   margin-bottom: 24px;
 }
+
+@mixin button-light($hover: true) {
+  color: $color-green-700;
+  background-color: $color-green-300;
+  border-radius: $border-radius-default;
+  @if $hover {
+    &:hover {
+      background-color: $color-green-400;
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin button-dark {
+  color: $color-grey-100;
+  background-color: $color-green-500;
+  border-radius: $border-radius-default;
+  &:hover {
+    background-color: $color-green-600;
+    cursor: pointer;
+  }
+}

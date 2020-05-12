@@ -44,18 +44,13 @@ export default {
     place-content: center;
 
     &__button {
-      background-color: $color-button-green-bg;
-      color: $color-button-green-text;
+      @include button-dark;
+      border-radius: $border-radius-default * 1.5; // make rounder
       text-decoration: none;
-      border-radius: $border-radius-default;
       padding: 8px 20px;
       margin: 0 8px;
       font-size: 18px;
       font-weight: 500;
-
-      &:hover {
-        background-color: $color-button-green-hover;
-      }
     }
   }
 }

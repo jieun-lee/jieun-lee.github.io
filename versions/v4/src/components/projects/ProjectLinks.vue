@@ -39,7 +39,8 @@ export default {
   place-content: flex-end;
 
   &__icon {
-    background-color: $color-green-400;
+    // later to be replaced with icons
+    background-color: $color-green-500;
     border-radius: 100px;
     padding: 4px 10px;
     text-align: center;

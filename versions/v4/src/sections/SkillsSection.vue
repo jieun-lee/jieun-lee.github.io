@@ -30,7 +30,7 @@ export default {
   },
   computed: {
     filteredSkills() {
-      if (this.category === "View All") {
+      if (this.category === "All") {
         return this.skills;
       } else {
         return this.skills.filter((skill) => skill.categories.includes(this.category));

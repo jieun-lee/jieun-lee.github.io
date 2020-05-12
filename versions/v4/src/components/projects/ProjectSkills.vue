@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
 
 .project-skills {
   margin-top: 8px;
@@ -23,14 +24,12 @@ export default {
   flex-wrap: wrap;
 
   &__skill {
-    background-color: $color-button-green-bg;
-    border-radius: $border-radius-default;
+    @include button-light(false);
     padding: 4px 8px;
     margin-right: 2px;
     margin-bottom: 2px;
     font-size: 12px;
     font-weight: 400;
-    color: $color-button-green-text;
   }
 }
 </style>

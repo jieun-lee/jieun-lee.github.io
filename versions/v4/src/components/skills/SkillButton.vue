@@ -23,22 +23,20 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mixins.scss";
 .skills-button {
-  color: $color-grey-100;
-  background-color: $color-green-500;
-  border-radius: $border-radius-button;
   margin: 4px;
   padding: 4px 12px;
 
+  &:not(&--selected) {
+    @include button-dark;
+  }
+
   &--selected {
     background-color: $color-green-800;
+    border-radius: $border-radius-default;
+    color: $color-grey-100;
     cursor: default;
   }
-
-  &:hover:not(&--selected) {
-    background-color: $color-green-600;
-    cursor: pointer;
-  }
-
 }
 </style>
