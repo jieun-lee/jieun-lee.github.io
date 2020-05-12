@@ -32,6 +32,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
+@import "@/scss/_mediaquery.scss";
 
 .more-section {
   &__header {
@@ -43,6 +44,14 @@ export default {
     display: flex;
     place-content: center;
 
+    @include small-phone {
+      flex-direction: column;
+      width: 50%;
+      // max-width: 170px;
+      margin: auto;
+      text-align: center;
+    }
+
     &__button {
       @include button-dark;
       border-radius: $border-radius-default * 1.5; // make rounder
@@ -51,6 +60,12 @@ export default {
       margin: 0 $spacing-small;
       font-size: $font-size-large;
       font-weight: 500;
+
+      @include small-phone {
+        margin-bottom: $spacing-small;
+        font-size: $font-size-default;
+        padding: $spacing-small $spacing-large;
+      }
     }
   }
 }
