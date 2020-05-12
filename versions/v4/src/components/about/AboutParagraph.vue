@@ -19,12 +19,20 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mediaquery.scss";
 
 $paragraph-width: 75%;
 
 .about-paragraph {
   margin: $spacing-section-default 0;
-  width: $paragraph-width;
+
+  @include desktop-and-larger {
+    width: $paragraph-width;
+    &--right {
+      text-align: right;
+      margin-left: 100% - $paragraph-width;
+    }
+  }
 
   &:first-child {
     margin-top: $spacing-default;
@@ -34,20 +42,25 @@ $paragraph-width: 75%;
     margin-bottom: $spacing-default;
   }
 
-  &--right {
-    text-align: right;
-    margin-left: 100% - $paragraph-width;
-  }
-
   &__header {
-    font-size: $font-size-header-default;
+    font-size: $font-size-header-small;
     font-weight: 700;
     letter-spacing: -1px;
     padding: 0 $spacing-default;
     color: $color-green-900;
+    line-height: $font-size-header-small;
+    
+
+    @include small-phone {
+      font-size: $font-size-header-xsmall;
+    }
+
+    @include phablet-and-larger {
+      font-size: $font-size-header-default;
+      line-height: $font-size-header-default;
+    }
 
     &--bottom {
-      margin-top: -$spacing-small;
       color: $color-green-700;
     }
   }

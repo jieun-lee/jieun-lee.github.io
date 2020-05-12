@@ -28,7 +28,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
-@import "@/scss/_mediaquery.scss";
 
 $content-area-width: $tablet-width;
 
@@ -43,7 +42,7 @@ $content-area-width: $tablet-width;
   }
 
   &__wrapper {
-    width: 100%;
+    width: 95%;
     max-width: $content-area-width;;
     margin: auto;
   }
