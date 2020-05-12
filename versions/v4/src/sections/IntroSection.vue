@@ -61,7 +61,7 @@ $intro-section-border: 8px solid $color-green-700;
   &__nametag {
     background-color: $color-grey-100-75;
     text-align: center;
-    padding: $spacing-section-small $spacing-section-large;
+    padding: $spacing-section-xsmall $spacing-section-large;
     margin: $spacing-default;
     border-radius: $border-radius-extra;
 

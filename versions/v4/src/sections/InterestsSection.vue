@@ -1,6 +1,6 @@
 <template>
   <Section id="interests" theme="dark">
-    <div class="interests-wrapper">
+    <div class="interests-wrapper interests-wrapper--main">
       <InterestCardSub
         :name="this.interests[indexLeft]['name']"
         position="left"
@@ -17,6 +17,15 @@
         @interest-clicked="clicked('right')"
       />
     </div>
+    <div class="interests-wrapper interests-wrapper--mini">
+      <InterestCardMini
+        v-for="interest in interests"
+        :key="interest.name"
+        :name="interest.name"
+        :description="interest.description"
+        :link="interest.link"
+      />
+    </div>
   </Section>
 </template>
 
@@ -24,12 +33,14 @@
 import Section from "@/components/Section.vue";
 import InterestCardSub from "@/components/interests/InterestCardSub.vue";
 import InterestCardMid from "@/components/interests/InterestCardMid.vue";
+import InterestCardMini from "@/components/interests/InterestCardMini.vue";
 import interestsData from "@/data/interests.json";
 export default {
   components: {
     Section,
     InterestCardSub,
-    InterestCardMid
+    InterestCardMid,
+    InterestCardMini
   },
   data() {
     return {
@@ -60,10 +71,28 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
+@import "@/scss/_mediaquery.scss";
 
 .interests-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &--mini {
+    flex-flow: wrap;
+    align-items: stretch;
+  }
+
+  @include smaller-than-phablet {
+    &--main {
+      display: none;
+    }
+  }
+
+  @include phablet-and-larger {
+    &--mini {
+      display: none;
+    }
+  }
 }
 </style>

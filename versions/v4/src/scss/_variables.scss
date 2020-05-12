@@ -43,7 +43,8 @@ $spacing-small: 0.5rem; // 8px
 $spacing-default: 0.75rem; // 12px
 $spacing-large: 1rem; // 16px
 // Section Sizes
-$spacing-section-small: 1.5rem; // 24px
+$spacing-section-xsmall: 1.5rem; // 24px
+$spacing-section-small: 2.25rem; // 36px
 $spacing-section-default: 3rem; // 48px
 $spacing-section-large: 4rem; // 64px
 
@@ -60,4 +61,4 @@ $large-width: 1200px;
 
 // DESIGNATED VALUES
 $color-component-bg: $color-green-100;
-$project-card-spacing: $spacing-section-small;
+$project-card-spacing: $spacing-section-xsmall;

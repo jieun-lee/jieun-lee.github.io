@@ -43,7 +43,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -$spacing-default auto $spacing-section-small;
+    margin: -$spacing-default auto $spacing-section-xsmall;
     width: 75%;
 
     @include phablet-and-larger {

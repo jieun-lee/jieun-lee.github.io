@@ -24,7 +24,7 @@ export default {
 
 #footer {
   background-color: $color-grey-600;
-  padding-bottom: $spacing-section-small;
+  padding-bottom: $spacing-section-xsmall;
 }
 
 .footer__content {

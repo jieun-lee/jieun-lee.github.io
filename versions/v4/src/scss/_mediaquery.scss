@@ -4,6 +4,12 @@
   }
 }
 
+@mixin smaller-than-phablet {
+  @media (max-width: #{$phablet-width - 1px}) {
+    @content;
+  }
+}
+
 @mixin phablet {
   @media (min-width: #{$phablet-width}) and (max-width: #{$tablet-width - 1px}) {
     @content;

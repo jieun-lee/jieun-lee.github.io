@@ -32,7 +32,7 @@ export default {
 $content-area-width: $tablet-width;
 
 .section {
-  padding: $spacing-section-small $spacing-default $spacing-section-default;
+  padding: $spacing-section-xsmall $spacing-default $spacing-section-default;
 
   &--dark {
     background-color: $color-green-300;
