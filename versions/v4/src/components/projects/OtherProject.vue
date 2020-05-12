@@ -35,12 +35,12 @@ export default {
   padding: $spacing-large;
   flex: 1 1 0;
   justify-content: space-between;
-  margin-bottom: $project-card-spacing;
 
-  @include phablet-and-larger {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: $project-card-spacing;
 
-    &:not(:last-child) {
+    @include phablet-and-larger {
+      margin-bottom: 0;
       margin-right: $project-card-spacing;
     }
   }

@@ -41,9 +41,11 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
+@import "@/scss/_mediaquery.scss";
 
+$small-card-dims-sm: 150px;
 $small-card-dims: 250px;
-$small-card-hover-dims: 255px;
+$small-card-hover-diff: 5px;
 $small-card-shadow: 2px 2px 8px 0 $color-green-700-25;
 $small-card-shadow-hover: 2px 2px 12px 0 $color-green-700-25;
 $small-card-img-filter: brightness(0.5) blur(1px);
@@ -58,10 +60,17 @@ $small-card-img-filter: brightness(0.5) blur(1px);
   overflow: hidden;
 
   &:hover {
-    width: $small-card-hover-dims;
-    height: $small-card-hover-dims;
+    width: $small-card-dims + $small-card-hover-diff;
+    height: $small-card-dims + $small-card-hover-diff;
     box-shadow: $small-card-shadow-hover;
     cursor: pointer;
+  }
+
+  @include phablet {
+    width: $small-card-dims-sm;
+    &:hover {
+      width: $small-card-dims-sm + $small-card-hover-diff;
+    }
   }
 
   &__image {
