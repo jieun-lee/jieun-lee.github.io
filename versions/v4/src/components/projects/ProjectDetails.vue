@@ -29,7 +29,6 @@ export default {
 @import "@/scss/_variables.scss";
 
 .project-details {
-  padding: $spacing-small $spacing-default;
 
   &--featured {
     padding: $spacing-large;

@@ -28,8 +28,9 @@ export default {
 <style lang="scss" scoped>
 @import "@/scss/_variables.scss";
 @import "@/scss/_mixins.scss";
+@import "@/scss/_mediaquery.scss";
 
-$content-area-width: 768px;
+$content-area-width: $tablet-width;
 
 .section {
   padding: $spacing-section-small $spacing-default $spacing-section-default;

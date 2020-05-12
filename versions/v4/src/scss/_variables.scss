@@ -28,26 +28,26 @@ $color-grey-100-75: #fbfbfbbf;
 
 // FONT SIZES
 // Standard Sizes
-$font-size-xsmall: 12px;
-$font-size-small: 14px;
-$font-size-default: 16px;
-$font-size-large: 18px;
+$font-size-xsmall: 0.75rem; // 12px
+$font-size-small: 0.875rem; // 14px
+$font-size-default: 1rem; // 16px
+$font-size-large: 1.125rem; // 18px
 // Header Sizes
-$font-size-header-small: 24px;
-$font-size-header-default: 28px;
-$font-size-header-large: 36px;
+$font-size-header-small: 1.5rem; // 24px
+$font-size-header-default: 1.75rem; // 28px
+$font-size-header-large: 2.25rem; // 36px
 
 // SPACING SIZES
 // Standard Sizes
-$spacing-xsmall: 4px;
-$spacing-small: 8px;
-$spacing-default: 12px;
-$spacing-large: 16px;
+$spacing-xsmall: 0.25rem; // 4px
+$spacing-small: 0.5rem; // 8px
+$spacing-default: 0.75rem; // 12px
+$spacing-large: 1rem; // 16px
 // Section Sizes
-$spacing-section-small: 24px;
-$spacing-section-default: 48px;
-$spacing-section-large: 64px;
+$spacing-section-small: 1.5rem; // 24px
+$spacing-section-default: 3rem; // 48px
+$spacing-section-large: 4rem; // 64px
 
 // BORDER RADIUS
-$border-radius-default: 8px;
-$border-radius-extra: 36px;
+$border-radius-default: 0.5rem; // 8px
+$border-radius-extra: 2.25rem; // 36px
