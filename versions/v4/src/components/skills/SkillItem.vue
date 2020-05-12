@@ -43,6 +43,10 @@ $skill-bar-height: 26px;
     margin: $spacing-large;
   }
 
+  @include small-phone {
+    flex-direction: column;
+  }
+
   &__label {
     font-weight: 600;
     width: $skill-label-width;
@@ -51,12 +55,14 @@ $skill-bar-height: 26px;
     font-size: $font-size-small;
     align-self: center;
 
-    @include small-phone {
-      font-size: $font-size-xsmall;
-    }
-
     @include tablet-and-larger {
       font-size: $font-size-default;
+    }
+
+    @include small-phone {
+      margin: 0;
+      width: 100%;
+      text-align: left;
     }
   }
 
