@@ -1,24 +1,29 @@
 {
   "paragraphs": [
     {
-      "header1": "\"Hello World\"; I'm Jieun Lee.",
+      "header1": "Hello World; I'm Jieun Lee.",
       "header2": "I'm a Software Developer.",
-      "paragraph": "short intro about my skills and interests asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew a"
+      "paragraph": "Hello! My name is Jieun Lee, and I'm a software developer based in Vancouver, BC. I recently completed my Bachelor of Science in Computer Science and Mathematics at UBC and am currently looking for new career opportunities in the area. In the past I have worked as a co-op software developer at Hootsuite and at SAP."
     },
     {
-      "header1": "I was interested in making websites",
-      "header2": "since I was young.",
-      "paragraph": "sketchups of websites, website builders, HTML, graphics, still my greatest interest asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa"
+      "header1": "My greatest programming interests",
+      "header2": "lie in front-end development.",
+      "paragraph": "I am passionate about utilizing JavaScript, HTML, CSS, as well as other frameworks and libraries such as React and Vue.js to implement beautiful and effective web interfaces. I love seeing a website or web application become more useful and visually appealing throughout several development cycles and enjoy being able to show people what I do on a non-technical level."
     },
     {
-      "header1": "I recently graduated from UBC,",
-      "header2": "majoring in Computer Science and Math.",
-      "paragraph": "originally was going to pursue something else, but this was one of the best decisions I made. asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa"
+      "header1": "That being said, I still enjoy programming",
+      "header2": "in other \"less visual\" languages too.",
+      "paragraph": "Being interested in front-end development doesn't mean I'm not interested in other areas of software. In fact, my first official programming language was Java, and it is still one of my favourite programming languages. I am also interested in mobile development; I made Android applications using Java and XML with Android Studio, and have worked with React Native as well. I am very open to learning new technologies too - who knows, maybe it'll become my new favourite."
     },
     {
-      "header1": "I'm not the best programmer out there,",
-      "header2": "and I won't pretend I am.",
-      "paragraph": "but I will try my best asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa weg awg awega wgaw egw eg aewgeage asdfasdf asdfa efaew aeg ewg aewgae wfa dfa dsfsd fasfa"
+      "header1": "I like being a developer because",
+      "header2": "I can create meaningful things with code.",
+      "paragraph": "One of the things I like most about being a developer is being able to create something meaningful through code, whether it is purely for entertainment or for improving the way people do their work. Another thing that drives me forward is the amazing feeling you get when you see that your code finally works - maybe it's a developer thing ;). But either way, knowing I'm doing something meaningful, I'll work hard and put my best effort into it, even if I may not be the best developer out there."
+    },
+    {
+      "header1": "Some of my non-programming interests",
+      "header2": "include music and photography.",
+      "paragraph": "Outside of my programming life, I have a passion for music and playing instruments. I started playing piano since I was young, and picked up guitar a couple of years ago as well. I am also a hobbyist photographer; I especially like taking pictures when I go somewhere special as I am reminded of those moments just from looking at the photos."
     }
   ]
 }
