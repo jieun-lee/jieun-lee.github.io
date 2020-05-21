@@ -51,7 +51,7 @@ export default {
     margin-left: $spacing-xsmall;
 
     &:hover {
-      background-color: $color-green-500;
+      background-color: $color-green-600;
     }
   }
 }

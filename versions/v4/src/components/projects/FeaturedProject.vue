@@ -33,7 +33,7 @@ export default {
 @import "@/scss/_mediaquery.scss";
 
 $featured-project-img-max-width: 475px;
-$featured-project-img-height: 170px;
+$featured-project-img-width: 275px;
 $featured-project-img-border: 2px solid $color-green-500;
 
 .featured-project {
@@ -53,9 +53,7 @@ $featured-project-img-border: 2px solid $color-green-500;
     border: $featured-project-img-border;
 
     @include phablet-and-larger {
-      width: auto;
-      min-width: unset;
-      height: $featured-project-img-height;
+      width: $featured-project-img-width;
       margin: 0;
       border: none; // reset border
       border-top-left-radius: $border-radius-default;

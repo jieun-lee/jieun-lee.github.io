@@ -5,13 +5,26 @@
       "imgsrc": "type-the-food",
       "skills": [
         "JavaScript",
-        "CSS/SCSS",
-        "HTML"
+        "HTML",
+        "CSS/SCSS"
       ],
-      "description": "Mini browser game involving memorizing short menus and typing",
+      "description": "One-player browser game where the player remembers food names from the menu and types them out when a customer orders correctly.",
       "links": {
         "code": "https://github.com/jieun-lee/type-the-food",
         "run": "https://jieun-lee.github.io/type-the-food/"
+      }
+    },
+    {
+      "name": "Timetable Planner",
+      "imgsrc": "timetable-planner",
+      "skills": [
+        "React",
+        "TypeScript",
+        "CSS/SCSS"
+      ],
+      "description": "Web application for helping students plan out their school timetables by displaying potential course and section combinations.",
+      "links": {
+        "code": "https://github.com/jieun-lee/timetable-planner"
       }
     },
     {
@@ -21,24 +34,9 @@
         "Java",
         "Java Swing"
       ],
-      "description": "Original Monopoly-like board game. Two players move around the board, buying ice cream flavours and collecting stars",
+      "description": "Original Monopoly-like board game where two players move around the board to buy ice cream flavours and collecting stars through them.",
       "links": {
         "code": "https://github.com/jieun-lee/ice-cream-game"
-      }
-    },
-    {
-      "name": "Mini Drum Kit",
-      "imgsrc": "mini-drum-kit",
-      "skills": [
-        "JavaScript",
-        "Vue.js",
-        "CSS",
-        "HTML"
-      ],
-      "description": "In-browser drum kit with a basic Kick, Snare, Hi-Hat, and Crash (sounds from Focusrite)",
-      "links": {
-        "code": "https://github.com/jieun-lee/mini-drum-kit",
-        "run": "https://jieun-lee.github.io/mini-drum-kit/"
       }
     }
   ],
@@ -48,23 +46,23 @@
       "skills": [
         "React Native"
       ],
-      "description": "Mobile app used to obtain feedback about product ingredient labels, made for NW Hacks 2020",
+      "description": "Mobile app used to obtain information about product ingredients and their potential risks by taking a photo of the product label.",
       "links": {
         "code": "https://github.com/hurjun1995/nwhacks2020_inGRADEient"
       }
     },
     {
-      "name": "Cookbook Database",
+      "name": "Mini Drum Kit",
       "skills": [
         "JavaScript",
-        "PHP",
-        "SQL",
+        "Vue.js",
         "CSS",
         "HTML"
       ],
-      "description": "Group project for a databases course at school. A recipe database where users can upload their own recipes and manage their own cookbooks",
+      "description": "Handy drum kit with a basic Kick, Snare, Hi-Hat, and Crash that can be played easily through key strokes in the web browser.",
       "links": {
-        "code": "https://github.com/soohyunkim/Cookbook"
+        "code": "https://github.com/jieun-lee/mini-drum-kit",
+        "run": "https://jieun-lee.github.io/mini-drum-kit/"
       }
     },
     {
@@ -75,7 +73,7 @@
         "JavaScript",
         "HTML Canvas"
       ],
-      "description": "V1 made with Java, V2 made with JavaScript. Mini game where a vegetable files up and down to avoid hitting obstacles",
+      "description": "A game where a user moves a vegetable up and down to avoid hitting obstacles. First made with Java, then again with JavaScript.",
       "links": {
         "code": "https://github.com/jieun-lee/fly-vegetable",
         "run": "https://jieun-lee.github.io/fly-vegetable/JavaScript/main.html"

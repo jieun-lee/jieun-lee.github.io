@@ -52,6 +52,7 @@ $intro-section-border: 8px solid $color-green-700;
     position: absolute;
     top: 0;
     left: 0;
+    filter: brightness(1.05);
   }
 
   &__wrapper {

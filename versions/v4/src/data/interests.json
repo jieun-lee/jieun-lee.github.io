@@ -2,7 +2,7 @@
   "interests": [
     {
       "name": "programming",
-      "description": "Sort of obvious, right?",
+      "description": "For me, programming is not just a career but also a hobby. I have fun making things through code.",
       "link": {
         "label": "Github",
         "url": "https://github.com/jieun-lee"
@@ -10,7 +10,7 @@
     },
     {
       "name": "music",
-      "description": "I play piano. I play guitar. I play in a band. Or alone.",
+      "description": "I played piano since I was young and I regularly play as part of a band. I also like playing guitar.",
       "link": {
         "label": "Instagram",
         "url": "https://www.instagram.com/je_pianooo/"
@@ -18,15 +18,15 @@
     },
     {
       "name": "photography",
-      "description": "I like taking pictures. Especially scenery, etc.",
+      "description": "I enjoy taking photos of scenery, nature, and food. Sometimes I use Photoshop to edit them.",
       "link": {
-        "label": "Portfolio",
+        "label": "MyPortfolio",
         "url": "https://jieun-lee.myportfolio.com/"
       }
     },
     {
       "name": "travelling",
-      "description": "I like travelling and visiting new places. My favourite city is Vancouver. Prague was nice too.",
+      "description": "I like travelling and visiting new places around the world. So far, Prague was my favourite.",
       "link": {
         "label": "Travel Photos",
         "url": "https://jieun-lee.myportfolio.com/travel"
