@@ -48,7 +48,6 @@ $skill-bar-height: 26px;
   }
 
   &__label {
-    font-weight: 400;
     width: $skill-label-width;
     text-align: right;
     margin-right: $spacing-default;

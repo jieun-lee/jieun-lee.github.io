@@ -30,7 +30,6 @@ export default {
     margin-right: $spacing-xsmall;
     margin-bottom: $spacing-xsmall;
     font-size: $font-size-xsmall;
-    font-weight: 400;
   }
 }
 </style>

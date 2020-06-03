@@ -80,7 +80,7 @@ $intro-name-letter-spacing: 0.75px;
 
     &__name {
       font-family: 'Roboto Slab';
-      font-weight: 700;
+      font-weight: $font-weight-bold-title;
       font-size: $font-size-header-large;
       letter-spacing: $intro-name-letter-spacing;
       line-height: 1;
@@ -88,7 +88,6 @@ $intro-name-letter-spacing: 0.75px;
 
     &__description {
       font-size: $font-size-large;
-      font-weight: 400;
     }
   }
 

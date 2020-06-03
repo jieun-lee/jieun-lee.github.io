@@ -48,7 +48,7 @@ $other-project-min-height: 200px;
   }
 
   &__name {
-    font-weight: 700;
+    font-weight: $font-weight-bold-2;
     font-size: $font-size-large;
 
     @include phablet {

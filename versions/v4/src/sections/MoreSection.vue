@@ -47,7 +47,6 @@ export default {
     @include small-phone {
       flex-direction: column;
       width: 50%;
-      // max-width: 170px;
       margin: auto;
       text-align: center;
     }
@@ -59,7 +58,6 @@ export default {
       padding: $spacing-small $spacing-section-xsmall;
       margin: 0 $spacing-small;
       font-size: $font-size-large;
-      font-weight: 400;
 
       @include small-phone {
         margin-bottom: $spacing-small;

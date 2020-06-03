@@ -52,7 +52,7 @@ $paragraph-width: 75%;
   &__header {
     font-size: $font-size-header-default;
     line-height: $font-size-header-default;
-    font-weight: 700;
+    font-weight: $font-weight-bold-2;
     letter-spacing: -0.5px;
     color: $color-green-900;
 

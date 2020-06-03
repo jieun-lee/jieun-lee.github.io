@@ -52,7 +52,7 @@ $icon-dimensions: 32px;
       left: 50%;
       color: $color-component-bg;
       font-size: $font-size-xsmall;
-      font-weight: 800;
+      font-weight: $font-weight-bold-3;
 
       &--code {
         transform: translate(-50%, -55%);
