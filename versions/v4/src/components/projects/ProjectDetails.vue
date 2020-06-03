@@ -41,6 +41,7 @@ $other-project-min-height: 200px;
 
   @include phablet-and-larger {
     width: 100%;
+    flex: 2 1 0;
 
     &:not(&--featured) {
       height: 100%;

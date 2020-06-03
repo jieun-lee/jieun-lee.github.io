@@ -1,6 +1,8 @@
 <template>
   <div class="featured-project">
-    <img class="featured-project__image" :src="require(`../../assets/projects/${this.imgsrc}.jpg`)" />
+    <div class="featured-project__image-wrapper">
+      <img class="featured-project__image" :src="require(`../../assets/projects/${this.imgsrc}.jpg`)" />
+    </div>
     <ProjectDetails
       :name="this.name"
       :skills="this.skills"
@@ -32,9 +34,8 @@ export default {
 @import "@/scss/_mixins.scss";
 @import "@/scss/_mediaquery.scss";
 
-$featured-project-img-max-width: 475px;
-$featured-project-img-width: 275px;
-$featured-project-img-border: 2px solid $color-green-500;
+$project-img-border-width: 2px;
+$project-img-border: $project-img-border-width solid $color-green-500;
 
 .featured-project {
   @include general-project-card;
@@ -46,23 +47,30 @@ $featured-project-img-border: 2px solid $color-green-500;
     flex-direction: row;
   }
 
-  &__image {
-    width: 92.5%;
-    max-width: $featured-project-img-max-width;
-    margin: 3.5vw auto 0;
-    border: $featured-project-img-border;
+  &__image-wrapper {
+    padding: $spacing-large;
+    padding-bottom: 0;
 
     @include phablet-and-larger {
-      width: $featured-project-img-width;
-      margin: 0;
+      padding: 0; // reset padding
+      flex: 3 1 0;
+      max-width: 300px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    margin-left: -$project-img-border-width;
+    margin-bottom: -$spacing-default;
+    border: $project-img-border;
+
+    @include phablet-and-larger {
+      margin: 0; // reset margin
       border: none; // reset border
       border-top-left-radius: $border-radius-default;
       border-bottom-left-radius: $border-radius-default;
-      border-right: $featured-project-img-border;
-    }
-
-    @include small-phone {
-      display: none;
+      border-right: $project-img-border;
     }
   }
 }
