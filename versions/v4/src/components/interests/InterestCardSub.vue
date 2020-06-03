@@ -78,7 +78,7 @@ $small-card-img-filter: brightness(0.5) blur(1px);
     border-radius: $border-radius-default;
     filter: $small-card-img-filter;
     -webkit-filter: $small-card-img-filter;
-    opacity: 75%;
+    opacity: 0.75;
   }
 }
 </style>

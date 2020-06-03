@@ -63,7 +63,7 @@ $mini-card-img-max-height-sm: 180px;
     @include small-phone {
       width: $mini-card-img-width-sm;
       max-height: $mini-card-img-max-height-sm;
-      opacity: 20%;
+      opacity: 0.2;
     }
   }
 
