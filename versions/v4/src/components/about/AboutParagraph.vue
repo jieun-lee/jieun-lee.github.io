@@ -43,21 +43,15 @@ $paragraph-width: 75%;
   }
 
   &__header {
-    font-size: $font-size-header-small;
+    font-size: $font-size-header-default;
+    line-height: $font-size-header-default;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     padding: 0 $spacing-default;
     color: $color-green-900;
-    line-height: $font-size-header-small;
-    
 
     @include small-phone {
-      font-size: $font-size-header-xsmall;
-    }
-
-    @include phablet-and-larger {
-      font-size: $font-size-header-default;
-      line-height: $font-size-header-default;
+      font-size: $font-size-header-small;
     }
 
     &--bottom {

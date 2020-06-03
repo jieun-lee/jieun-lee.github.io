@@ -34,6 +34,7 @@ export default {
 $intro-section-height: 500px;
 $intro-section-height-sm: 350px;
 $intro-section-border: 8px solid $color-green-700;
+$intro-name-letter-spacing: 0.75px;
 
 .intro {
   height: $intro-section-height-sm;
@@ -78,13 +79,15 @@ $intro-section-border: 8px solid $color-green-700;
     }
 
     &__name {
+      font-family: 'Roboto Slab';
+      font-weight: 700;
       font-size: $font-size-header-large;
-      font-weight: 900;
+      letter-spacing: $intro-name-letter-spacing;
     }
 
     &__description {
       font-size: $font-size-large;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 

@@ -26,7 +26,6 @@
 
 .nav__link {
     color: $color-grey-100;
-    font-weight: 450;
     margin: 0 $spacing-small;
     text-decoration: none;
 }

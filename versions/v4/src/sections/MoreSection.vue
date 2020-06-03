@@ -59,7 +59,7 @@ export default {
       padding: $spacing-small $spacing-section-xsmall;
       margin: 0 $spacing-small;
       font-size: $font-size-large;
-      font-weight: 500;
+      font-weight: 400;
 
       @include small-phone {
         margin-bottom: $spacing-small;
