@@ -83,6 +83,7 @@ $intro-name-letter-spacing: 0.75px;
       font-weight: 700;
       font-size: $font-size-header-large;
       letter-spacing: $intro-name-letter-spacing;
+      line-height: 1;
     }
 
     &__description {

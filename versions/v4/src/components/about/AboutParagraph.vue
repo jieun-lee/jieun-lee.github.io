@@ -1,7 +1,9 @@
 <template>
   <div class="about-paragraph" :class="[ isRight ? 'about-paragraph--right' : '']">
-    <div class="about-paragraph__header">{{ header1 }}</div>
-    <div class="about-paragraph__header about-paragraph__header--bottom">{{ header2 }}</div>
+    <div class="about-paragraph__header-wrapper">
+      <span class="about-paragraph__header">{{ header1 }} </span>
+      <span class="about-paragraph__header about-paragraph__header--bottom">{{ header2 }}</span>
+    </div>
     <div class="about-paragraph__paragraph">{{ paragraph }}</div>
   </div>
 </template>
@@ -26,10 +28,15 @@ $paragraph-width: 75%;
 .about-paragraph {
   margin: $spacing-section-default 0;
 
+  @include phablet-and-larger {
+    &--right {
+      text-align: right;
+    }
+  }
+
   @include desktop-and-larger {
     width: $paragraph-width;
     &--right {
-      text-align: right;
       margin-left: 100% - $paragraph-width;
     }
   }
@@ -47,16 +54,22 @@ $paragraph-width: 75%;
     line-height: $font-size-header-default;
     font-weight: 700;
     letter-spacing: -0.5px;
-    padding: 0 $spacing-default;
     color: $color-green-900;
 
     @include small-phone {
       font-size: $font-size-header-small;
     }
 
-    &--bottom {
-      color: $color-green-700;
+    @include phablet-and-larger {
+      &--bottom {
+        color: $color-green-700;
+        display: block;
+      }
     }
+  }
+
+  &__header-wrapper {
+    padding: 0 $spacing-default;
   }
 
   &__paragraph {
