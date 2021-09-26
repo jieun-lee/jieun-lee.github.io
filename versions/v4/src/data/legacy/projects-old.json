@@ -1,0 +1,30 @@
+{
+    "featured": [
+      {
+        "name": "Timetable Planner",
+        "imgsrc": "timetable-planner",
+        "skills": [
+          "React",
+          "TypeScript",
+          "CSS/SCSS"
+        ],
+        "description": "Web application for helping students plan out their school timetables by displaying potential course and section combinations.",
+        "links": {
+          "code": "https://github.com/jieun-lee/timetable-planner"
+        }
+      }
+    ],
+    "other": [
+      {
+        "name": "inGRADEient",
+        "skills": [
+          "React Native"
+        ],
+        "description": "Mobile app used to obtain information about product ingredients and their potential risks by taking a photo of the product label.",
+        "links": {
+          "code": "https://github.com/hurjun1995/nwhacks2020_inGRADEient"
+        }
+      }
+    ]
+  }
+  

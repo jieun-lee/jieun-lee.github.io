@@ -1,0 +1,42 @@
+{
+    "categories": [
+      "Featured",
+      "Programming",
+      "Web",
+      "Mobile",
+      "Other",
+      "All"
+    ],
+    "skills": [
+        {
+            "name": "Twig",
+            "level": 55,
+            "categories": [
+              "Web"
+            ]
+        },
+        {
+            "name": "ThreeJS",
+            "level": 50,
+            "categories": [
+              "Web",
+              "Other"
+            ]
+          },
+        {
+            "name": "Python",
+            "level": 45,
+            "categories": [
+            "Programming"
+            ]
+        },
+        {
+            "name": "Matlab",
+            "level": 40,
+            "categories": [
+            "Other"
+            ]
+        }
+    ]
+  }
+  

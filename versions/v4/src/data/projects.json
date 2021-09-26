@@ -1,6 +1,20 @@
 {
   "featured": [
     {
+      "name": "Product Compare",
+      "imgsrc": "product-compare",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "description": "Web-app to keep track of lists of items and compare product details through prices, descriptions, comments, and ratings.",
+      "links": {
+        "code": "https://github.com/jieun-lee/product-compare"
+      }
+    },
+    {
       "name": "Type the Food",
       "imgsrc": "type-the-food",
       "skills": [
@@ -12,19 +26,6 @@
       "links": {
         "code": "https://github.com/jieun-lee/type-the-food",
         "run": "https://jieun-lee.github.io/type-the-food/"
-      }
-    },
-    {
-      "name": "Timetable Planner",
-      "imgsrc": "timetable-planner",
-      "skills": [
-        "React",
-        "TypeScript",
-        "CSS/SCSS"
-      ],
-      "description": "Web application for helping students plan out their school timetables by displaying potential course and section combinations.",
-      "links": {
-        "code": "https://github.com/jieun-lee/timetable-planner"
       }
     },
     {
@@ -42,13 +43,16 @@
   ],
   "other": [
     {
-      "name": "inGRADEient",
+      "name": "EduGlobe",
       "skills": [
-        "React Native"
+        "TypeScript",
+        "React",
+        "CSS"
       ],
-      "description": "Mobile app used to obtain information about product ingredients and their potential risks by taking a photo of the product label.",
+      "description": "Google Chrome extension to provide basic facts about different countries, with features such as notifications, search, and theming.",
       "links": {
-        "code": "https://github.com/hurjun1995/nwhacks2020_inGRADEient"
+        "code": "https://github.com/yuubd/Google_extension-countries",
+        "run": "https://chrome.google.com/webstore/detail/eduglobe/bmmhbhjoecckbmaclggmclhjpaoogbmk?hl=en"
       }
     },
     {

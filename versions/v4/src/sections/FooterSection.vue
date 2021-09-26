@@ -1,7 +1,7 @@
 <template>
   <Section id="footer" theme="dark" :hideHeader="true">
     <div class="footer__content">
-      &copy;2020 Jieun Lee
+      &copy;2021 Jieun Lee
       <div class="footer__content__sub">
         Powered by Github Pages<br>
         Built with Vue.js

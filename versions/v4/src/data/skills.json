@@ -4,6 +4,7 @@
     "Programming",
     "Web",
     "Mobile",
+    "Database",
     "Other",
     "All"
   ],
@@ -32,25 +33,8 @@
       ]
     },
     {
-      "name": "Java",
-      "level": 75,
-      "categories": [
-        "Featured",
-        "Programming",
-        "Mobile"
-      ]
-    },
-    {
       "name": "React",
-      "level": 70,
-      "categories": [
-        "Featured",
-        "Web"
-      ]
-    },
-    {
-      "name": "Vue.js",
-      "level": 70,
+      "level": 85,
       "categories": [
         "Featured",
         "Web"
@@ -58,7 +42,7 @@
     },
     {
       "name": "TypeScript",
-      "level": 65,
+      "level": 80,
       "categories": [
         "Featured",
         "Programming",
@@ -66,10 +50,27 @@
       ]
     },
     {
+      "name": "Java",
+      "level": 70,
+      "categories": [
+        "Featured",
+        "Programming",
+        "Mobile"
+      ]
+    },
+    {
       "name": "Git",
-      "level": 65,
+      "level": 70,
       "categories": [
         "Other"
+      ]
+    },
+    {
+      "name": "Vue.js",
+      "level": 65,
+      "categories": [
+        "Featured",
+        "Web"
       ]
     },
     {
@@ -88,6 +89,14 @@
       ]
     },
     {
+      "name": "MongoDB",
+      "level": 60,
+      "categories": [
+        "Featured",
+        "Database"
+      ]
+    },
+    {
       "name": "jQuery",
       "level": 60,
       "categories": [
@@ -102,52 +111,32 @@
       ]
     },
     {
-      "name": "Twig",
+      "name": "C#",
       "level": 55,
       "categories": [
-        "Web"
+        "Programming"
       ]
     },
     {
       "name": "SQL",
       "level": 50,
       "categories": [
-        "Other"
+        "Database"
       ]
     },
     {
-      "name": "ThreeJS",
+      "name": "Node.js",
       "level": 50,
       "categories": [
-        "Web",
-        "Other"
-      ]
-    },
-    {
-      "name": "Python",
-      "level": 45,
-      "categories": [
-        "Programming"
+        "Programming",
+        "Web"
       ]
     },
     {
       "name": "PHP",
       "level": 40,
       "categories": [
-        "Web"
-      ]
-    },
-    {
-      "name": "Matlab",
-      "level": 40,
-      "categories": [
-        "Other"
-      ]
-    },
-    {
-      "name": "Node.js",
-      "level": 35,
-      "categories": [
+        "Programming",
         "Web"
       ]
     }
