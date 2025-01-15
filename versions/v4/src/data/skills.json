@@ -9,6 +9,32 @@
     "All"
   ],
   "skills": [
+	{
+		"name": "JavaScript",
+		"level": 90,
+		"categories": [
+		  "Featured",
+		  "Programming",
+		  "Web"
+		]
+	},
+	{
+		"name": "TypeScript",
+		"level": 90,
+		"categories": [
+		"Featured",
+		"Programming",
+		"Web"
+		]
+	},
+	{
+	"name": "React",
+	"level": 90,
+	"categories": [
+		"Featured",
+		"Web"
+	]
+	},
     {
       "name": "HTML",
       "level": 90,
@@ -23,32 +49,21 @@
         "Web"
       ]
     },
-    {
-      "name": "JavaScript",
-      "level": 85,
-      "categories": [
-        "Featured",
-        "Programming",
-        "Web"
-      ]
-    },
-    {
-      "name": "React",
-      "level": 85,
-      "categories": [
-        "Featured",
-        "Web"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": 80,
-      "categories": [
-        "Featured",
-        "Programming",
-        "Web"
-      ]
-    },
+	{
+		"name": "Redux",
+		"level": 75,
+		"categories": [
+		  "Web"
+		]
+	},
+	{
+		"name": "C#",
+		"level": 75,
+		"categories": [
+			"Featured",
+			"Programming"
+		]
+	},
     {
       "name": "Java",
       "level": 70,
@@ -59,19 +74,20 @@
       ]
     },
     {
-      "name": "Redux",
-      "level": 70,
-      "categories": [
-        "Web"
-      ]
-    },
-    {
       "name": "Git",
       "level": 70,
       "categories": [
         "Other"
       ]
     },
+	{
+		"name": "MongoDB",
+		"level": 65,
+		"categories": [
+		  "Featured",
+		  "Database"
+		]
+	  },
     {
       "name": "Vue.js",
       "level": 65,
@@ -96,14 +112,6 @@
       ]
     },
     {
-      "name": "MongoDB",
-      "level": 60,
-      "categories": [
-        "Featured",
-        "Database"
-      ]
-    },
-    {
       "name": "jQuery",
       "level": 60,
       "categories": [
@@ -115,13 +123,6 @@
       "level": 60,
       "categories": [
         "Web"
-      ]
-    },
-    {
-      "name": "C#",
-      "level": 55,
-      "categories": [
-        "Programming"
       ]
     },
     {
